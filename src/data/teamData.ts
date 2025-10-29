@@ -5,6 +5,7 @@ export interface TeamMember {
     game: string;
     avatar: string;
     bio: string;
+    nickname: string
     stats: {
         kd: string;
         kast: string;
@@ -30,6 +31,7 @@ export const teamMembersData: TeamMember[] = [
             winRate: '65%',
             firstBloods: '0.20/round'
         },
+        nickname: 'Emster',
         achievements: ['Top 5 Regional Controller', 'Team MVP March 2024']
     },
     {
@@ -45,6 +47,7 @@ export const teamMembersData: TeamMember[] = [
             winRate: '60%',
             firstBloods: '0.10/round'
         },
+        nickname: 'Colomb',
         achievements: ['Best Sentinel in Local League', 'Clutch Queen Award']
     },
     {
@@ -60,6 +63,7 @@ export const teamMembersData: TeamMember[] = [
             winRate: '73%',
             firstBloods: '0.40/round'
         },
+        nickname: "Fox3000foxy",
         achievements: ['Local Tournament Winner', 'Best Duelist of the Month']
     },
     {
@@ -75,6 +79,7 @@ export const teamMembersData: TeamMember[] = [
             winRate: '58%',
             firstBloods: '0.31/round'
         },
+        nickname: 'Panther',
         achievements: ['Top Initiator in Weekly Scrims', 'Utility Master Award']
     },
     {
@@ -90,6 +95,7 @@ export const teamMembersData: TeamMember[] = [
             winRate: '70%',
             firstBloods: '0.25/round'
         },
+        nickname: 'Cthulhu',
         achievements: ['Top Fragger in Local Matches', 'Flashiest Play Award']
     }
 ];

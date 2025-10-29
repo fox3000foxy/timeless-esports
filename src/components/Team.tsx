@@ -86,7 +86,7 @@ const Team = () => {
                         }}
                     >
                         <div className="info-header">
-                            <h3>{hoveredMember.name}</h3>
+                            <h3>{hoveredMember.nickname} - {hoveredMember.name}</h3>
                             <p className="role">{hoveredMember.role}</p>
                             <p className="game">{hoveredMember.game}</p>
                         </div>

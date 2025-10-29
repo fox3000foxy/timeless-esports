@@ -1,0 +1,121 @@
+.modal-overlay {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    animation: modalFadeIn 0.3s ease-out;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.98), rgba(20, 20, 20, 0.95));
+    border: 2px solid #ff2b2b;
+    box-shadow: 
+        0 0 20px rgba(255, 43, 43, 0.3),
+        inset 0 0 30px rgba(255, 43, 43, 0.1);
+}
+
+.info-header {
+    border-bottom: 1px solid rgba(255, 43, 43, 0.3);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.info-header h3 {
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem 0;
+    color: #ff2b2b;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.info-header .role {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.info-header .game {
+    color: #ff2b2b;
+    font-size: 1rem;
+    margin: 0.25rem 0 0 0;
+    opacity: 0.8;
+}
+
+.info-content {
+    color: #ffffff;
+}
+
+.team-member-photo {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.stats {
+    margin: 2rem 0;
+}
+
+.stats h4, .achievements h4, .full-story h4, .playstyle h4 {
+    color: #ff2b2b;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stats-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.stats-list li {
+    background: rgba(255, 43, 43, 0.1);
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 43, 43, 0.2);
+}
+
+.stats-list li strong {
+    color: #ff2b2b;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.achievement-badge {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 43, 43, 0.1);
+    border: 1px solid rgba(255, 43, 43, 0.2);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.bio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

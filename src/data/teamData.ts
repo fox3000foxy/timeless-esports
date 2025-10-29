@@ -107,7 +107,7 @@ export const teamMembersData: TeamMember[] = [
             winRate: '73%',
             firstBloods: '0.35/round'
         },
-        nickname: 'Cthulhu',
+        nickname: 'phantom',
         achievements: ['Top Fragger in Local Matches', 'Flashiest Play Award', 'Most Aggressive Duelist']
     }
 ];

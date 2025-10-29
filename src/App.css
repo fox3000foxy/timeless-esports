@@ -10,7 +10,7 @@
   --white: #ffffff;
   --silver: #a3a3a3;
   --gradient-red: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
-  --gradient-dark: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  --gradient-dark: linear-gradient(135deg, #0f0f0f 100%, #1a1a1a 100%);
 }
 
 /* Reset et base */
@@ -541,12 +541,12 @@ section {
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
-  border-left: 4px solid var(--primary-red);
+  /* border-left: 4px solid var(--primary-red); */
   transition: all 0.3s ease;
 }
 
 .achievement-card:hover {
-  transform: translateX(8px);
+  /* transform: translateX(8px); */
   border-left-width: 8px;
 }
 

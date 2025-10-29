@@ -124,42 +124,59 @@ const Team = () => {
                             >
                                 ✕
                             </button>
-                            <div className="info-header">
-                                <h3>{selectedMember.nickname}</h3>
-                                <p className="role">{selectedMember.role}</p>
-                                <p className="game">{selectedMember.game}</p>
-                            </div>
-                            <div className="info-content">
-                                <p className="bio">{selectedMember.bio}</p>
-                                {selectedMember.fullStory && (
-                                    <div className="full-story">
-                                        <h4>Histoire</h4>
-                                        <p>{selectedMember.fullStory}</p>
-                                    </div>
-                                )}
-                                {selectedMember.playstyle && (
-                                    <div className="playstyle">
-                                        <h4>Style de Jeu</h4>
-                                        <p>{selectedMember.playstyle}</p>
-                                    </div>
-                                )}
-                                <div className="stats">
-                                    <h4>Stats</h4>
-                                    <ul className="stats-list">
-                                        <li><strong>K/D:</strong> {selectedMember.stats.kd}</li>
-                                        <li><strong>KAST:</strong> {selectedMember.stats.kast}</li>
-                                        <li><strong>Clutch Rate:</strong> {selectedMember.stats.clutchRate}</li>
-                                        <li><strong>Win Rate:</strong> {selectedMember.stats.winRate}</li>
-                                        <li><strong>First Bloods:</strong> {selectedMember.stats.firstBloods}</li>
-                                    </ul>
+                            <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
+                                <div style={{ flex: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                    <img
+                                        src={selectedMember.avatar}
+                                        alt={`${selectedMember.name} - ${selectedMember.role}`}
+                                        style={{
+                                            height: '100%',
+                                            // height: 'auto',
+                                            borderRadius: '12px',
+                                            objectFit: 'cover',
+                                            // border: '2px solid #ff6b35',
+                                        }}
+                                    />
                                 </div>
-                                <div className="achievements">
-                                    <h4>Achievements</h4>
-                                    {selectedMember.achievements.map((achievement: string, i: number) => (
-                                        <span key={i} className="achievement-badge">
-                                            🏆 {achievement}
-                                        </span>
-                                    ))}
+                                <div style={{ flex: '80%' }}>
+                                    <div className="info-header">
+                                        <h3>{selectedMember.nickname}</h3>
+                                        <p className="role">{selectedMember.role}</p>
+                                        <p className="game">{selectedMember.game}</p>
+                                    </div>
+                                    <div className="info-content">
+                                        <p className="bio">{selectedMember.bio}</p>
+                                        {selectedMember.fullStory && (
+                                            <div className="full-story">
+                                                <h4>Histoire</h4>
+                                                <p>{selectedMember.fullStory}</p>
+                                            </div>
+                                        )}
+                                        {selectedMember.playstyle && (
+                                            <div className="playstyle">
+                                                <h4>Style de Jeu</h4>
+                                                <p>{selectedMember.playstyle}</p>
+                                            </div>
+                                        )}
+                                        <div className="stats">
+                                            <h4>Stats</h4>
+                                            <ul className="stats-list">
+                                                <li><strong>K/D:</strong> {selectedMember.stats.kd}</li>
+                                                <li><strong>KAST:</strong> {selectedMember.stats.kast}</li>
+                                                <li><strong>Clutch Rate:</strong> {selectedMember.stats.clutchRate}</li>
+                                                <li><strong>Win Rate:</strong> {selectedMember.stats.winRate}</li>
+                                                <li><strong>First Bloods:</strong> {selectedMember.stats.firstBloods}</li>
+                                            </ul>
+                                        </div>
+                                        <div className="achievements">
+                                            <h4>Achievements</h4>
+                                            {selectedMember.achievements.map((achievement: string, i: number) => (
+                                                <span key={i} className="achievement-badge">
+                                                    🏆 {achievement}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

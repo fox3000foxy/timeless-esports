@@ -4,17 +4,17 @@ const Sponsors = () => {
     const sponsors = [
         {
             name: 'Corsair',
-            icon: '/assets/sponsors/corsair.png',
+            icon: '/assets/sponsors/corsair.avif',
             description: 'Corsair est un leader mondial dans la fabrication de matériel gaming haut de gamme, offrant des produits innovants pour les joueurs et les créateurs de contenu.'
         },
         {
             name: 'Razer',
-            icon: '/assets/sponsors/razer.png',
+            icon: '/assets/sponsors/razer.avif',
             description: 'Razer est une marque emblématique dans le monde du gaming, connue pour ses périphériques et ordinateurs portables de haute performance.'
         },
         {
             name: 'Discord',
-            icon: '/assets/sponsors/discord.png',
+            icon: '/assets/sponsors/discord.avif',
             description: 'Discord est la plateforme incontournable pour les communautés de joueurs, offrant des outils de communication modernes et efficaces.'
         },
         {

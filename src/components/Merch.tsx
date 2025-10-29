@@ -22,7 +22,7 @@ const Merch = () => {
       id: 1,
       name: 'Maillot Domicile',
       price: '49.99€',
-      image: '/assets/merch/maillot-home.png',
+      image: '/assets/merch/maillot-home.avif',
       description: 'Maillot officiel de Timeless Esports',
       variants: []
     },
@@ -30,13 +30,13 @@ const Merch = () => {
       id: 2,
       name: 'Maillot Homme',
       price: '39.99€',
-      image: '/assets/merch/polo-homme.png',
+      image: '/assets/merch/polo-homme.avif',
       description: 'Polo premium pour homme',
       variants: [
         {
           id: 3,
           name: 'Maillot Homme Variant',
-          image: '/assets/merch/polo-homme-variant.png'
+          image: '/assets/merch/polo-homme-variant.avif'
         }
       ]
     },
@@ -44,13 +44,13 @@ const Merch = () => {
       id: 4,
       name: 'Maillot Femme',
       price: '39.99€',
-      image: '/assets/merch/polo-femme.png',
+      image: '/assets/merch/polo-femme.avif',
       description: 'Polo premium pour femme',
       variants: [
         {
           id: 5,
           name: 'Maillot Femme Variant',
-          image: '/assets/merch/polo-femme-variant.png'
+          image: '/assets/merch/polo-femme-variant.avif'
         }
       ]
     },
@@ -58,7 +58,7 @@ const Merch = () => {
       id: 6,
       name: 'Maillot Enfant',
       price: '29.99€',
-      image: '/assets/merch/maillot-enfant.png',
+      image: '/assets/merch/maillot-enfant.avif',
       description: 'Maillot pour enfant',
       variants: []
     },
@@ -66,7 +66,7 @@ const Merch = () => {
       id: 7,
       name: 'Bonnet Timeless',
       price: '24.99€',
-      image: '/assets/merch/bonnet.png',
+      image: '/assets/merch/bonnet.avif',
       description: "Bonnet officiel de l'équipe",
       variants: []
     },
@@ -74,7 +74,7 @@ const Merch = () => {
       id: 8,
       name: 'Bandeau',
       price: '14.99€',
-      image: '/assets/merch/bandeau.png',
+      image: '/assets/merch/bandeau.avif',
       description: 'Bandeau Timeless Esports',
       variants: []
     },
@@ -82,7 +82,7 @@ const Merch = () => {
       id: 9,
       name: 'Mug Officiel',
       price: '12.99€',
-      image: '/assets/merch/mug.png',
+      image: '/assets/merch/mug.avif',
       description: 'Mug aux couleurs de Timeless',
       variants: []
     },
@@ -90,7 +90,7 @@ const Merch = () => {
       id: 10,
       name: 'Tapis Souris',
       price: '19.99€',
-      image: '/assets/merch/tapis-souris.png',
+      image: '/assets/merch/tapis-souris.avif',
       description: 'Tapis souris gaming Timeless',
       variants: []
     }

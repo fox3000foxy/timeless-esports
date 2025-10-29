@@ -34,7 +34,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
     <header className="header">
       <div className="container">
         <div className="logo-section">
-          <img src="/assets/logo.png" style={{ width: "64px", marginRight: "2rem" }} alt="Logo Timeless" />
+          <img src="/assets/logo.avif" style={{ width: "64px", marginRight: "2rem" }} alt="Logo Timeless" />
           <div className="logo-placeholder">
             <span>TIMELESS</span>
             <span className="esport-text">ESPORT</span>

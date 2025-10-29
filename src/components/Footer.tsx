@@ -1,4 +1,8 @@
+import { useState } from 'react';
+import LegalModal from './LegalModal';
+
 const Footer = () => {
+  const [modalType, setModalType] = useState<'legal' | 'privacy' | null>(null);
   return (
     <footer
       className="footer-section"
@@ -20,59 +24,49 @@ const Footer = () => {
         <p style={{ marginBottom: '1rem' }}>
           &copy; 2025 Timeless Esport. Tous droits réservés.
         </p>
-        <p style={{ marginBottom: '1rem' }}>
-          Suivez-nous sur nos réseaux sociaux :
-        </p>
-        {/* <ul
-          className="social-links"
-          style={{
-            listStyle: 'none',
-            padding: 0,
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '1rem',
-          }}
-        >
-          <li>
-            <a
-              href="https://twitter.com/timelessesport"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: '#1DA1F2',
-                textDecoration: 'none',
-              }}
-            >
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://instagram.com/timelessesport"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: '#E1306C',
-                textDecoration: 'none',
-              }}
-            >
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://facebook.com/timelessesport"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: '#4267B2',
-                textDecoration: 'none',
-              }}
-            >
-              Facebook
-            </a>
-          </li>
-        </ul> */}
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          gap: '2rem',
+          marginTop: '1rem',
+          fontSize: '0.85rem'
+        }}>
+          <button
+            onClick={() => setModalType('legal')}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'var(--silver)',
+              cursor: 'pointer',
+              padding: '0.5rem',
+              transition: 'color 0.3s ease'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary-red)'}
+            onMouseLeave={(e) => e.currentTarget.style.color = 'var(--silver)'}
+          >
+            Mentions légales
+          </button>
+          <button
+            onClick={() => setModalType('privacy')}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'var(--silver)',
+              cursor: 'pointer',
+              padding: '0.5rem',
+              transition: 'color 0.3s ease'
+            }}
+            onMouseEnter={(e) => e.currentTarget.style.color = 'var(--primary-red)'}
+            onMouseLeave={(e) => e.currentTarget.style.color = 'var(--silver)'}
+          >
+            Politique de confidentialité
+          </button>
+        </div>
+        <LegalModal
+          isOpen={modalType !== null}
+          onClose={() => setModalType(null)}
+          type={modalType === 'legal' ? 'legal' : 'privacy'}
+        />
       </div>
     </footer>
   );

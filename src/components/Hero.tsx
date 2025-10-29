@@ -1,11 +1,37 @@
+import { useEffect, useState } from 'react';
+
 const Hero = () => {
+  const [count, setCount] = useState(0);
+  const [viewers, setViewers] = useState(0);
+  const [followers, setFollowers] = useState(0);
+
+  useEffect(() => {
+    const animateCounter = (start: number, end: number, duration: number, setState: React.Dispatch<React.SetStateAction<number>>) => {
+      let current = start;
+      const increment = end / (duration / 10);
+      const counter = setInterval(() => {
+        current += increment;
+        if (current >= end) {
+          clearInterval(counter);
+          setState(end);
+        } else {
+          setState(Math.ceil(current));
+        }
+      }, 10);
+    };
+
+    animateCounter(0, 100, 1000, setCount);
+    animateCounter(0, 5000, 1000, setViewers);
+    animateCounter(0, 120000, 1000, setFollowers);
+  }, []);
+
   return (
     <section
       id="home"
       className="hero"
       style={{
         background: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/hero.png)",
-        // backgroundSize: "100% 100%",
+        backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -19,16 +45,16 @@ const Hero = () => {
         </p>
         <div className="hero-stats">
           <div className="stat">
-            <span className="stat-number">3</span>
-            <span className="stat-label">Tournois Gagnés</span>
+            <span className="stat-number">{count}</span>
+            <span className="stat-label">Compétitions Gagnées</span>
           </div>
           <div className="stat">
-            <span className="stat-number">1</span>
-            <span className="stat-label">Jeu Compétitif</span>
+            <span className="stat-number">{viewers}</span>
+            <span className="stat-label">Spectateurs Actuels</span>
           </div>
           <div className="stat">
-            <span className="stat-number">250K+</span>
-            <span className="stat-label">Followers</span>
+            <span className="stat-number">{followers}</span>
+            <span className="stat-label">Abonnés Totaux</span>
           </div>
         </div>
       </div>

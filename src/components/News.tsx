@@ -1,3 +1,5 @@
+import './News.css';
+
 const News = () => {
   const newsArticles = [
     {
@@ -66,11 +68,7 @@ const News = () => {
     <section id="news" className="news-section">
       <div className="container">
         <h2 className="section-title">Actualités</h2>
-        <div className="news-grid" style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '1.5rem'
-        }}>
+        <div className="news-grid">
           {newsArticles.map((article, index) => (
             <article key={index} className="news-card">
               <h3>{article.title}</h3>

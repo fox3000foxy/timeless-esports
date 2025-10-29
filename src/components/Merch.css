@@ -1,8 +1,17 @@
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .variant-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 1rem;
 }
 
 .variant-arrow {
@@ -14,7 +23,12 @@
   padding: 5px 10px;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.merch-card:hover .variant-arrow {
+  opacity: 1;
 }
 
 .variant-arrow:hover {
@@ -32,4 +46,24 @@
 
 .variant-arrow.right {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .merch-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .merch-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .merch-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }

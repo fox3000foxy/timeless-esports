@@ -1,10 +1,33 @@
+import { useEffect, useState } from 'react';
+
 const About = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const end = 150; // Remplacez par votre nombre cible
+    const duration = 2000; // Durée de l'animation en ms
+    const increment = end / (duration / 10);
+
+    const counter = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        clearInterval(counter);
+        setCount(end);
+      } else {
+        setCount(Math.ceil(start));
+      }
+    }, 10);
+
+    return () => clearInterval(counter);
+  }, []);
+
   return (
     <section id="about" className="about-section">
       <div className="container">
         <h2 className="section-title">À Propos de Timeless Esports</h2>
         
-        <div className="about-content">
+        <div className="about-content" data-aos="fade-up">
           <div className="about-story">
             <h3>Notre Histoire</h3>
             <p>
@@ -59,7 +82,7 @@ const About = () => {
             <h3>Nos Accomplissements</h3>
             <div className="stats-grid">
               <div className="stat-item">
-                <span className="stat-number">150+</span>
+                <span className="stat-number">{count}+</span>
                 <span className="stat-label">Tournois Remportés</span>
               </div>
               <div className="stat-item">

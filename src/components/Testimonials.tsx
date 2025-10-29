@@ -65,7 +65,7 @@ const Testimonials = () => {
         <h2 className="section-title">Témoignages</h2>
         <p className="section-subtitle">Ce que les gens disent de Timeless Esports</p>
         
-        <div className="testimonials-grid">
+        <div className="testimonials-grid" data-aos="fade-up">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="testimonial-card">
               <div className="testimonial-header">

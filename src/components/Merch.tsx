@@ -123,12 +123,7 @@ const Merch = () => {
           Portez les couleurs de Timeless Esports avec style
         </p>
 
-        <div className="merch-grid" style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gridTemplateRows: 'repeat(2, 1fr)',
-          gap: '20px'
-        }}>
+        <div className="merch-grid">
           {merchProducts.map((product) => {
             const selectedVariantIndex = selectedVariants[product.id];
             const selectedVariant =
@@ -136,14 +131,14 @@ const Merch = () => {
 
             return (
               <div key={product.id} className="merch-card">
-                <div className="merch-image-container" style={{ position: 'relative' }}>
+                <div className="merch-image-container">
                   <img
                     src={selectedVariant.image}
                     alt={selectedVariant.name}
                     className="merch-image"
                   />
                   {product.variants.length > 0 && (
-                    <div className="variant-controls" style={{ position: 'absolute', top: '50%', width: '100%', display: 'flex', justifyContent: 'space-between', transform: 'translateY(-50%)' }}>
+                    <div className="variant-controls">
                       <button className="variant-arrow left" onClick={() => handleVariantChange(product.id, -1)}>◀</button>
                       <button className="variant-arrow right" onClick={() => handleVariantChange(product.id, 1)}>▶</button>
                     </div>

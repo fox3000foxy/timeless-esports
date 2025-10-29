@@ -33,7 +33,7 @@ const Sponsors = () => {
                     {sponsors.map((sponsor, index) => (
                         <div key={index} className="sponsor-card">
                             <div className="sponsor-icon" style={{
-                                marginBottom: '4rem'
+                                // marginBottom: '4rem'
                             }}>
                                 <img src={sponsor.icon} alt={sponsor.name} style={{
                                     height: '102px',

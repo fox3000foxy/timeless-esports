@@ -1,0 +1,35 @@
+.variant-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.variant-arrow {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.variant-arrow:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.variant-arrow:active {
+  transform: scale(0.95);
+}
+
+.variant-arrow.left {
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.variant-arrow.right {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

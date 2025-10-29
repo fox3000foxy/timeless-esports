@@ -1,0 +1,38 @@
+.sponsors-section {
+  padding: 4rem 0;
+  background: var(--secondary-black);
+  text-align: center;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.sponsor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px; /* Ensure consistent height for all sponsor cards */
+  padding: 1rem;
+  background: var(--dark-gray);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sponsor-logo {
+  filter: brightness(0) invert(1);
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

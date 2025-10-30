@@ -89,7 +89,7 @@ export const teamMembersData: TeamMember[] = [
             winRate: '73%',
             firstBloods: '0.25/round'
         },
-        nickname: 'Panther',
+        nickname: 'Phantom',
         achievements: ['Top Initiator in Weekly Scrims', 'Utility Master Award', 'Best Recon Player']
     },
     {
@@ -107,7 +107,7 @@ export const teamMembersData: TeamMember[] = [
             winRate: '73%',
             firstBloods: '0.35/round'
         },
-        nickname: 'phantom',
+        nickname: 'Panther',
         achievements: ['Top Fragger in Local Matches', 'Flashiest Play Award', 'Most Aggressive Duelist']
     }
 ];

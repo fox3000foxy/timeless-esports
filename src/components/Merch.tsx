@@ -136,6 +136,7 @@ const Merch = () => {
                     src={selectedVariant.image}
                     alt={selectedVariant.name}
                     className="merch-image"
+                    style={{ objectFit: 'cover' }}
                   />
                   {product.variants.length > 0 && (
                     <div className="variant-controls">

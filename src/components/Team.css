@@ -150,6 +150,10 @@
   .stats-list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .modal-member-avatar {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {

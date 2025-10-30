@@ -125,22 +125,39 @@ const Team = () => {
                                 ✕
                             </button>
                             <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem' }}>
-                                <div style={{ flex: '20%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                <div
+                                    style={{
+                                        flex: '20%',
+                                        // display: 'flex',
+                                        justifyContent: 'center',
+                                        alignItems: 'center',
+                                    }}
+                                    className="modal-member-avatar"
+                                >
                                     <img
                                         src={selectedMember.avatar}
                                         alt={`${selectedMember.name} - ${selectedMember.role}`}
                                         style={{
                                             height: '100%',
-                                            // height: 'auto',
                                             borderRadius: '12px',
                                             objectFit: 'cover',
-                                            // border: '2px solid #ff6b35',
                                         }}
                                     />
                                 </div>
                                 <div style={{ flex: '80%' }}>
                                     <div className="info-header">
-                                        <h3>{selectedMember.nickname}</h3>
+                                        <h3>
+                                            {selectedMember.nickname} <a
+                                                href={selectedMember.instagram}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="instagram-link"
+                                                style={{ color: '', fontSize: '', marginRight: '0.5rem' }}
+                                                aria-label="Instagram"
+                                            >
+                                                <i className="fab fa-instagram" />
+                                            </a>
+                                        </h3>
                                         <p className="role">{selectedMember.role}</p>
                                         <p className="game">{selectedMember.game}</p>
                                     </div>

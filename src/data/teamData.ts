@@ -16,6 +16,7 @@ export interface TeamMember {
         firstBloods: string;
     };
     achievements: string[];
+    instagram: string; // Ajout de la propriété Instagram
 }
 
 // Données des membres de l'équipe Timeless Esport
@@ -36,7 +37,8 @@ export const teamMembersData: TeamMember[] = [
             firstBloods: '0.12/round'
         },
         nickname: 'Emster',
-        achievements: ['Top 5 Regional Controller', 'Team MVP March 2024', 'Best Map Control 2024']
+        achievements: ['Top 5 Regional Controller', 'Team MVP March 2024', 'Best Map Control 2024'],
+        instagram: 'https://www.instagram.com/emster350/' // Ajout du lien Instagram
     },
     {
         name: 'Lin',
@@ -54,7 +56,8 @@ export const teamMembersData: TeamMember[] = [
             firstBloods: '0.08/round'
         },
         nickname: 'Colomb',
-        achievements: ['Best Sentinel in Local League', 'Clutch Queen Award', 'Defensive Maestro 2024']
+        achievements: ['Best Sentinel in Local League', 'Clutch Queen Award', 'Defensive Maestro 2024'],
+        instagram: 'https://www.instagram.com/liny.un8941/' // Ajout du lien Instagram
     },
     {
         name: 'Emi',
@@ -72,7 +75,8 @@ export const teamMembersData: TeamMember[] = [
             firstBloods: '0.40/round'
         },
         nickname: "Fox3000foxy",
-        achievements: ['Local Tournament Winner', 'Best Duelist of the Month', 'Team Captain & Leader']
+        achievements: ['Local Tournament Winner', 'Best Duelist of the Month', 'Team Captain & Leader'],
+        instagram: 'https://www.instagram.com/emitanaka_official' // Ajout du lien Instagram
     },
     {
         name: 'Marvin',
@@ -90,7 +94,8 @@ export const teamMembersData: TeamMember[] = [
             firstBloods: '0.25/round'
         },
         nickname: 'Phantom',
-        achievements: ['Top Initiator in Weekly Scrims', 'Utility Master Award', 'Best Recon Player']
+        achievements: ['Top Initiator in Weekly Scrims', 'Utility Master Award', 'Best Recon Player'],
+        instagram: 'https://www.instagram.com/ph.antom920/' // Ajout du lien Instagram
     },
     {
         name: 'Rami',
@@ -108,6 +113,7 @@ export const teamMembersData: TeamMember[] = [
             firstBloods: '0.35/round'
         },
         nickname: 'Panther',
-        achievements: ['Top Fragger in Local Matches', 'Flashiest Play Award', 'Most Aggressive Duelist']
+        achievements: ['Top Fragger in Local Matches', 'Flashiest Play Award', 'Most Aggressive Duelist'],
+        instagram: 'https://www.instagram.com/rami_vemuri?igsh=MWYxYXlwbG9mYjhuOQ%3D%3D&utm_source=qr' // Ajout du lien Instagram
     }
 ];

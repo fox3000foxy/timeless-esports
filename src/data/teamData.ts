@@ -83,7 +83,7 @@ export const teamMembersData: TeamMember[] = [
         role: 'Initiator - Sova',
         game: 'Valorant',
         avatar: '/assets/players/marvin.avif',
-        bio: `Originaire des quartiers de Dijon, en France, Marvin a découvert sa passion pour les jeux vidéo en empruntant l'ordinateur familial pour jouer à Counter-Strike. Il a ensuite migré vers Valorant, où il utilise Sova pour traquer ses ennemis avec une stratégie et une précision exceptionnelles.`,
+        bio: `Originaire des quartiers de Dijon, en France, Marvin a découvert sa passion pour les jeux vidéo en empruntant l'ordinateur de son orphelinat pour jouer à Counter-Strike. Il a ensuite migré vers Valorant, où il utilise Sova pour traquer ses ennemis avec une stratégie et une précision exceptionnelles.`,
         fullStory: `Marvin a grandi dans un environnement modeste de Dijon, où l'esport n'était pas valorisé. Mais sa détermination inébranlable et sa passion pour les stratégies de jeu l'ont poussé à s'entraîner tard la nuit. Il s'est formé lui-même, en regardant des streamers et en analysant les replays. Son passage à Counter-Strike l'a enseigné la patience et la vision du terrain. Avec Valorant, il a trouvé son arme de prédilection : Sova. Il voit chaque round comme une enquête, chaque drone comme un outil de surveillance. Rejoindre Timeless Esports a représenté l'aboutissement de ses efforts souterrains.`,
         playstyle: `Analytique et prédictif. Marvin utilise ses drones Sova pour recueillir des informations cruciales et anticiper les mouvements ennemis. Son style de jeu est basé sur l'intelligence tactique et la préparation stratégique, ce qui en fait un atout précieux pour l'équipe.`,
         stats: {

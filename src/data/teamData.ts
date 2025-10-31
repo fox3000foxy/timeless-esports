@@ -74,7 +74,7 @@ export const teamMembersData: TeamMember[] = [
             winRate: '73%',
             firstBloods: '0.40/round'
         },
-        nickname: "Fox3000foxy",
+        nickname: "TheUpsilonGirl",
         achievements: ['Local Tournament Winner', 'Best Duelist of the Month', 'Team Captain & Leader'],
         instagram: 'https://www.instagram.com/emitanaka_official' // Ajout du lien Instagram
     },

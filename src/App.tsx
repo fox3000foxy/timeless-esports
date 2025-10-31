@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 // Import des composants
@@ -30,25 +31,30 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      {/* Header fixe avec navigation */}
-      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
-      
-      {/* Contenu principal - toutes les sections sur une seule page */}
-      <main className="main">
-        <Hero />
-        <Tournaments />
-        <Team />
-        <Sponsors />
-        <Merch />
-        <News />
-        <Contact />
-      </main>
-      
-      {/* Footer */}
-      <Footer />
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="app">
+              <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+              <main className="main">
+                <Hero />
+                <Tournaments />
+                <Team />
+                <Sponsors />
+                <Merch />
+                <News />
+                <Contact />
+              </main>
+              <Footer />
+            </div>
+          }
+        />
+        {/* <Route path="/instaPost/:member" element={<InstaPost />} /> */}
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App

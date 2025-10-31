@@ -37,8 +37,8 @@ function App() {
       {/* Contenu principal - toutes les sections sur une seule page */}
       <main className="main">
         <Hero />
-        <Team />
         <Tournaments />
+        <Team />
         <Sponsors />
         <Merch />
         <News />

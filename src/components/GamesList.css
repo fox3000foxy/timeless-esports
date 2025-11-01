@@ -1,0 +1,122 @@
+.games-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%);
+}
+
+.games-showcase {
+  margin-top: 2rem;
+}
+
+.games-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.game-nav-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 43, 43, 0.2);
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-nav-item:hover {
+  background: rgba(255, 43, 43, 0.1);
+  border-color: rgba(255, 43, 43, 0.4);
+}
+
+.game-nav-item.active {
+  background: rgba(255, 43, 43, 0.2);
+  border-color: rgba(255, 43, 43, 0.5);
+  color: #ff2b2b;
+}
+
+.game-details {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 43, 43, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.game-banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.game-info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.game-info-overlay h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.game-stats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat .label {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.stat .value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.game-roster {
+  padding: 2rem;
+}
+
+.game-roster h4 {
+  color: #ff2b2b;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.roster-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.roster-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.player-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff2b2b;
+}
+
+.roster-player span {
+  color: #ffffff;
+  font-weight: 500;
+}

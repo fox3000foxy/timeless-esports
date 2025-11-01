@@ -3,7 +3,20 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 // Import des composants
-import { Contact, Footer, Header, Hero, Merch, News, Sponsors, Team, Tournaments } from './components';
+import {
+  Contact,
+  Footer,
+  GamesList,
+  Header,
+  Hero,
+  Merch,
+  News,
+  Recruitment,
+  Schedule,
+  Sponsors,
+  Team,
+  Tournaments
+} from './components';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -11,7 +24,18 @@ function App() {
   // Détection de la section active basée sur le scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'team', 'tournaments', 'merch', 'news', 'contact'];
+      const sections = [
+        'home',
+        // 'achievements',
+        'games',
+        'schedule',
+        'team',
+        'tournaments',
+        'merch',
+        'news',
+        'recruitment',
+        'contact'
+      ];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -40,17 +64,22 @@ function App() {
               <Header activeSection={activeSection} setActiveSection={setActiveSection} />
               <main className="main">
                 <Hero />
-                <Tournaments />
+                {/* <Achievements /> */}
+                <GamesList />
+                <Schedule />
                 <Team />
+                <Tournaments />
                 <Sponsors />
                 <Merch />
                 <News />
+                <Recruitment />
                 <Contact />
               </main>
               <Footer />
             </div>
           }
         />
+        {/* <Route path="/player/:playerId" element={<PlayerProfile />} /> */}
         {/* <Route path="/instaPost/:member" element={<InstaPost />} /> */}
       </Routes>
     </BrowserRouter>

@@ -10,10 +10,14 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigation = [
     { id: 'home', label: 'Accueil' },
+    // { id: 'achievements', label: 'Réalisations' },
+    { id: 'games', label: 'Jeux' },
+    { id: 'schedule', label: 'Calendrier' },
     { id: 'team', label: 'Équipe' },
     { id: 'tournaments', label: 'Tournois' },
     { id: 'merch', label: 'Boutique' },
     { id: 'news', label: 'Actualités' },
+    { id: 'recruitment', label: 'Recrutement' },
     { id: 'contact', label: 'Contact' }
   ];
 

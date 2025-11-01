@@ -1,0 +1,145 @@
+.recruitment-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%);
+}
+
+.recruitment-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .recruitment-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.positions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.position-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 43, 43, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.position-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 43, 43, 0.4);
+  box-shadow: 0 10px 20px rgba(255, 43, 43, 0.1);
+}
+
+.position-card h4 {
+  color: #ff2b2b;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.roles, .requirements {
+  margin-top: 1rem;
+}
+
+.roles strong, .requirements strong {
+  color: #1DA1F2;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.roles ul, .requirements ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.roles li, .requirements li {
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+  position: relative;
+}
+
+.roles li:before, .requirements li:before {
+  content: "•";
+  color: #ff2b2b;
+  position: absolute;
+  left: -1rem;
+}
+
+.recruitment-form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 43, 43, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.recruitment-form h3 {
+  color: #ff2b2b;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 43, 43, 0.2);
+  border-radius: 8px;
+  padding: 0.8rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submit-button {
+  margin-top: 2rem;
+  width: 100%;
+  background: rgba(255, 43, 43, 0.2);
+  color: #ff2b2b;
+  border: 1px solid rgba(255, 43, 43, 0.3);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background: rgba(255, 43, 43, 0.3);
+  border-color: rgba(255, 43, 43, 0.5);
+}

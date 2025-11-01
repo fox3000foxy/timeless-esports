@@ -1,0 +1,104 @@
+.schedule-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%);
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.match-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 43, 43, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 43, 43, 0.1);
+  border-color: rgba(255, 43, 43, 0.4);
+}
+
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.game-tag {
+  background: rgba(29, 161, 242, 0.2);
+  color: #1DA1F2;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.tournament {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.match-teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.team-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.vs {
+  color: #ff2b2b;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.date {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.watch-button {
+  display: block;
+  background: rgba(255, 43, 43, 0.2);
+  color: #ff2b2b;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 43, 43, 0.3);
+}
+
+.watch-button:hover {
+  background: rgba(255, 43, 43, 0.3);
+  border-color: rgba(255, 43, 43, 0.5);
+}

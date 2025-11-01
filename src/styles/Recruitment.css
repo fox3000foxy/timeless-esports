@@ -1,6 +1,10 @@
 .recruitment-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 30, 0.8) 0%,
+    rgba(40, 40, 50, 0.6) 100%
+  );
 }
 
 .recruitment-content {
@@ -42,28 +46,33 @@
   margin-bottom: 1rem;
 }
 
-.roles, .requirements {
+.roles,
+.requirements {
   margin-top: 1rem;
 }
 
-.roles strong, .requirements strong {
-  color: #1DA1F2;
+.roles strong,
+.requirements strong {
+  color: #1da1f2;
   display: block;
   margin-bottom: 0.5rem;
 }
 
-.roles ul, .requirements ul {
+.roles ul,
+.requirements ul {
   list-style: none;
   padding-left: 1rem;
 }
 
-.roles li, .requirements li {
+.roles li,
+.requirements li {
   color: #ffffff;
   margin-bottom: 0.3rem;
   position: relative;
 }
 
-.roles li:before, .requirements li:before {
+.roles li:before,
+.requirements li:before {
   content: "•";
   color: #ff2b2b;
   position: absolute;

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './styles/App.css';
+import { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./styles/App.css";
 
 // Import des composants
 import {
@@ -16,26 +16,26 @@ import {
   Schedule,
   Sponsors,
   Team,
-  Tournaments
-} from './components';
+  Tournaments,
+} from "./components";
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home')
+  const [activeSection, setActiveSection] = useState("home");
 
   // Détection de la section active basée sur le scroll
   useEffect(() => {
     const handleScroll = () => {
       const sections = [
-        'home',
-        'history',
-        'games',
-        'schedule',
-        'team',
-        'tournaments',
-        'merch',
-        'news',
-        'recruitment',
-        'contact'
+        "home",
+        "history",
+        "games",
+        "schedule",
+        "team",
+        "tournaments",
+        "merch",
+        "news",
+        "recruitment",
+        "contact",
       ];
       const scrollPosition = window.scrollY + 100;
 
@@ -43,7 +43,10 @@ function App() {
         const element = document.getElementById(section);
         if (element) {
           const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setActiveSection(section);
             break;
           }
@@ -51,8 +54,8 @@ function App() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -62,7 +65,10 @@ function App() {
           path="/"
           element={
             <div className="app">
-              <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+              <Header
+                activeSection={activeSection}
+                setActiveSection={setActiveSection}
+              />
               <main className="main">
                 <Hero />
                 <History />
@@ -87,4 +93,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

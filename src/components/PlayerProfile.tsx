@@ -1,10 +1,12 @@
-import { useParams } from 'react-router-dom';
-import { teamMembersData } from '../data/teamData';
+import { useParams } from "react-router-dom";
+import { teamMembersData } from "../data/teamData";
 // import './PlayerProfile.css';
 
 const PlayerProfile = () => {
   const { playerId } = useParams();
-  const player = teamMembersData.find(p => p.nickname.toLowerCase() === playerId?.toLowerCase());
+  const player = teamMembersData.find(
+    (p) => p.nickname.toLowerCase() === playerId?.toLowerCase(),
+  );
 
   if (!player) {
     return (
@@ -16,19 +18,19 @@ const PlayerProfile = () => {
 
   const achievements = [
     {
-      title: 'Champion LFL Summer 2025',
-      date: 'Août 2025',
-      game: 'League of Legends',
-      prize: '50,000€'
+      title: "Champion LFL Summer 2025",
+      date: "Août 2025",
+      game: "League of Legends",
+      prize: "50,000€",
     },
     // Ajouter plus de réalisations
   ];
 
   const stats = {
-    winRate: '68%',
+    winRate: "68%",
     matchesPlayed: 145,
-    avgKDA: '4.2',
-    tournaments: 12
+    avgKDA: "4.2",
+    tournaments: 12,
   };
 
   return (
@@ -36,9 +38,9 @@ const PlayerProfile = () => {
       <div className="container">
         <div className="profile-header">
           <div className="profile-image-container">
-            <img 
-              src={`/assets/players/${player.nickname.toLowerCase()}.avif`} 
-              alt={player.nickname} 
+            <img
+              src={`/assets/players/${player.nickname.toLowerCase()}.avif`}
+              alt={player.nickname}
               className="profile-image"
             />
           </div>

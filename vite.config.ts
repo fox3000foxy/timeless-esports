@@ -9,17 +9,23 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg,gif,avif,webp}'],
+        globPatterns: ['**/*.{js,css,html,ico}'],
         globIgnores: ['**/node_modules/**/*'],
         cleanupOutdatedCaches: true,
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MB
         skipWaiting: true,
         clientsClaim: true,
         navigateFallback: 'index.html',
-        runtimeCaching: [{
-          urlPattern: ({ url }) => {
-            return url.pathname.match(/\.(png|jpg|jpeg|svg|gif|avif|webp)$/);
-          },
+        runtimeCaching: [
+        {
+          urlPattern: /\.(js|css|html|ico)$/i,
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'static-resources'
+          }
+        },
+        {
+          urlPattern: new RegExp('\\.(png|jpg|jpeg|svg|gif|avif|webp)$'),
           handler: 'CacheFirst',
           options: {
             cacheName: 'images-cache',
@@ -29,12 +35,10 @@ export default defineConfig({
             expiration: {
               maxEntries: 50,
               maxAgeSeconds: 30 * 24 * 60 * 60 // 30 jours
-            },
-            matchOptions: {
-              ignoreSearch: true
             }
           }
-        }]
+        }],
+        dontCacheBustURLsMatching: /\.(png|jpg|jpeg|svg|gif|avif|webp)$/
       },
       manifest: {
         name: 'Timeless Esports',

@@ -4,6 +4,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    assetsInlineLimit: 0, // Évite l'inlining des images
+  },
   plugins: [
     react(),
     VitePWA({
@@ -12,7 +15,7 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico}'],
         globIgnores: ['**/node_modules/**/*'],
         cleanupOutdatedCaches: true,
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MB
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, // 10 MB (augmenté pour les images HD)
         skipWaiting: true,
         clientsClaim: true,
         navigateFallback: 'index.html',
@@ -33,9 +36,15 @@ export default defineConfig({
               statuses: [0, 200]
             },
             expiration: {
-              maxEntries: 50,
+              maxEntries: 100, // Augmenté pour plus d'images HD
               maxAgeSeconds: 30 * 24 * 60 * 60 // 30 jours
-            }
+            },
+            plugins: [{
+              cacheKeyWillBeUsed: async ({ request }) => {
+                // Préserver la qualité originale de l'image
+                return request.url;
+              }
+            }]
           }
         }],
         dontCacheBustURLsMatching: /\.(png|jpg|jpeg|svg|gif|avif|webp)$/

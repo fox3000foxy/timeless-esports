@@ -39,7 +39,7 @@
 public/assets/
 ├── emi.png     # Photo d'Emi
 ├── emma.png    # Photo d'Emma  
-├── lin.png     # Photo de Lin
+├── lin.avif     # Photo de Lin
 ├── marvin.png  # Photo de Marvin
 └── rami.png    # Photo de Rami
 ```

@@ -28,11 +28,11 @@ const Team = () => {
                     {teamMembersData.map((member, index) => {
                         // Configuration pour chaque membre selon leur position dans l'image
                         const configs = [
-                            { scale: 0.75, zIndex: 2, left: '670px', top: '300px', height: '823px' },
-                            { scale: 0.69, zIndex: 3, left: '310px', top: '330px', height: '1248px' },
+                            { scale: 0.75, zIndex: 2, left: '730px', top: '300px', height: '823px' },
+                            { scale: 0.73, zIndex: 3, left: '410px', top: '230px', height: '948px' },
                             { scale: 1, zIndex: 5, left: '0px', top: '250px', height: '1030px' },
                             { scale: 0.83, zIndex: 3, right: '240px', top: '290px', height: '1002px' },
-                            { scale: 0.75, zIndex: 2, right: '690px', top: '360px', height: '923px' },
+                            { scale: 0.75, zIndex: 2, right: '590px', top: '360px', height: '923px' },
                         ];
 
                         const config = configs[index];

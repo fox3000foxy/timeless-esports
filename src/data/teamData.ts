@@ -41,10 +41,10 @@ export const teamMembersData: TeamMember[] = [
         instagram: 'https://www.instagram.com/emster350/' // Ajout du lien Instagram
     },
     {
-        name: 'Lin',
+        name: 'Lin Yun-ji',
         role: 'Sentinel - Killjoy',
         game: 'Valorant',
-        avatar: '/assets/players/lin.avif',
+        avatar: '/assets/players/lin.png',
         bio: `Originaire de Corée du Sud, Lin a commencé à jouer dans les cybercafés de son quartier. Ses amis ont rapidement remarqué son potentiel dans l'esport. Admiratrice de Faker, elle s'est spécialisée dans le rôle de Sentinel, utilisant Killjoy pour sécuriser les sites avec des gadgets ingénieux.`,
         fullStory: `Lin a découvert l'esport à 13 ans dans un PC bang de Séoul. Contrairement à ses parents qui rêvaient pour elle d'une carrière médicale, elle a poursuivi sa passion secrètement, entraînée après les cours. Son jeu patient et méthodique contraste avec l'agressivité typique des joueurs coréens, ce qui l'a rendue unique. Elle a progressé à travers les rangs locaux en menant discrètement son équipe vers des victoires stratégiques. Son adhésion à Timeless représente son rêve de porter les couleurs de la Corée sur une scène internationale.`,
         playstyle: `Défensive et réfléchie. Lin joue avec une préparation minutieuse, plaçant ses gadgets Killjoy pour maximiser le contrôle du terrain. Sa force réside dans son anticipation des mouvements ennemis et sa capacité à créer des situations défavorables pour l'adversaire.`,

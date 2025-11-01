@@ -27,7 +27,7 @@ const About = () => {
       <div className="container">
         <h2 className="section-title">À Propos de Timeless Esports</h2>
         
-        <div className="about-content" data-aos="fade-up">
+        <div className="about-content">
           <div className="about-story">
             <h3>Notre Histoire</h3>
             <p>

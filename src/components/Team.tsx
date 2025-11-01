@@ -24,7 +24,7 @@ const Team = () => {
                 </p>
 
                 {/* Photo de groupe alignée horizontalement */}
-                <div className="team-photo-lineup" data-aos="fade-up">
+                <div className="team-photo-lineup">
                     {teamMembersData.map((member, index) => {
                         // Configuration pour chaque membre selon leur position dans l'image
                         const configs = [

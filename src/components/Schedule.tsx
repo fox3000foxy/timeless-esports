@@ -3,14 +3,14 @@ import './Schedule.css';
 
 const Schedule = () => {
     const [upcomingMatches] = useState([
-        {
-            opponent: 'Team Vitality',
-            game: 'League of Legends',
-            date: '2027-11-15T20:00:00',
-            tournament: 'LFL 2025',
-            streamUrl: 'https://twitch.tv/otplol_',
-            logoUrl: '/assets/teams/vitality.avif'
-        },
+        // {
+        //     opponent: 'Team Vitality',
+        //     game: 'League of Legends',
+        //     date: '2027-11-15T20:00:00',
+        //     tournament: 'LFL 2025',
+        //     streamUrl: 'https://twitch.tv/otplol_',
+        //     logoUrl: '/assets/teams/vitality.avif'
+        // },
         {
             opponent: 'Karmine Corp',
             game: 'Valorant',
@@ -46,7 +46,7 @@ const Schedule = () => {
                         <div
                             key={index}
                             className="match-card"
-                            data-aos="fade-up"
+                           
                             data-aos-delay={index * 100}
                         >
                             <div className="match-header">

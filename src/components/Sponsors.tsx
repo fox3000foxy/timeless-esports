@@ -1,4 +1,4 @@
-import './Sponsors.css';
+import '../styles/Sponsors.css';
 
 const Sponsors = () => {
     const sponsors = [

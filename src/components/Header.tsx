@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Header.css';
+import '../styles/Header.css';
 
 interface HeaderProps {
   activeSection: string;
@@ -10,7 +10,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigation = [
     { id: 'home', label: 'Accueil' },
-    // { id: 'achievements', label: 'Réalisations' },
+    { id: 'history', label: 'Histoire' },
     { id: 'games', label: 'Jeux' },
     { id: 'schedule', label: 'Calendrier' },
     { id: 'team', label: 'Équipe' },

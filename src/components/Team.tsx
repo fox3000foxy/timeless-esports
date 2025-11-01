@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { TeamMember } from '../data/teamData';
 import { teamMembersData } from '../data/teamData';
-import './Team.css';
+import '../styles/Team.css';
 
 const Team = () => {
     const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);

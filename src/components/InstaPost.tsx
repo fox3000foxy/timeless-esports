@@ -2,7 +2,7 @@ import html2canvas from 'html2canvas';
 import { useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { teamMembersData } from '../data/teamData';
-import './InstaPost.css';
+import '../styles/InstaPost.css';
 
 const InstaPost = () => {
     const { member } = useParams();

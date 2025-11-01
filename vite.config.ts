@@ -9,7 +9,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico}'],
+        globPatterns: ['**/*.{js,css,html,ico,png,jpg,jpeg,svg,gif,avif,webp}'],
+        globIgnores: ['**/node_modules/**/*'],
         cleanupOutdatedCaches: true,
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5 MB
         skipWaiting: true,
@@ -22,6 +23,9 @@ export default defineConfig({
           handler: 'CacheFirst',
           options: {
             cacheName: 'images-cache',
+            cacheableResponse: {
+              statuses: [0, 200]
+            },
             expiration: {
               maxEntries: 50,
               maxAgeSeconds: 30 * 24 * 60 * 60 // 30 jours

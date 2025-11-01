@@ -10,7 +10,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,avif,webp}'],
-        cleanupOutdatedCaches: true
+        cleanupOutdatedCaches: true,
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024 // 5 MB
       },
       manifest: {
         name: 'Timeless Esports',

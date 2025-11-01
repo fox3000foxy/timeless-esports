@@ -22,7 +22,7 @@ const InstaPost = () => {
             const image = canvas.toDataURL('image/png');
             const link = document.createElement('a');
             link.href = image;
-            link.download = `${selectedMember?.nickname || 'player'}-post.png`;
+            link.download = `${selectedMember?.nickname || 'player'}-post.avif`;
             link.click();
         } catch (error) {
             console.error('Error capturing post:', error);

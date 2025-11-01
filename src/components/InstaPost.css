@@ -115,7 +115,7 @@
 }
 
 .insta-post-image {
-    background-image: url('../assets/team.png');
+    background-image: url('../assets/team.avif');
     height: 100%;
     aspect-ratio: 1;
     overflow: hidden;
@@ -131,7 +131,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../assets/team.png');
+    background-image: url('../assets/team.avif');
         /* , repeating-linear-gradient(45deg, 
             transparent, 
             transparent 10px, 

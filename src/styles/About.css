@@ -1,7 +1,11 @@
 /* About Section */
 .about-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 30, 0.8) 0%,
+    rgba(40, 40, 50, 0.6) 100%
+  );
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -27,7 +31,7 @@
 .about-mission h3,
 .about-values h3,
 .about-stats h3 {
-  color: #1DA1F2;
+  color: #1da1f2;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
@@ -56,7 +60,7 @@
   content: "▸";
   position: absolute;
   left: 0;
-  color: #1DA1F2;
+  color: #1da1f2;
   font-weight: bold;
 }
 
@@ -71,8 +75,10 @@
   background: rgba(29, 161, 242, 0.1);
   padding: 1.5rem;
   border-radius: 8px;
-  border-left: 3px solid #1DA1F2;
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 3px solid #1da1f2;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .value-card:hover {
@@ -81,7 +87,7 @@
 }
 
 .value-card h4 {
-  color: #1DA1F2;
+  color: #1da1f2;
   margin-bottom: 0.5rem;
 }
 
@@ -114,7 +120,7 @@
   display: block;
   font-size: 2rem;
   font-weight: bold;
-  color: #1DA1F2;
+  color: #1da1f2;
   margin-bottom: 0.5rem;
 }
 

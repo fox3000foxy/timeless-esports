@@ -1,11 +1,27 @@
-import { faGamepad, faMedal, faTrophy } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGamepad,
+  faMedal,
+  faTrophy,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Tournaments = () => {
   const achievements = [
-    { title: 'Vainqueur Tournoi Local Paris', game: 'Valorant', icon: faTrophy },
-    { title: 'Finaliste Tournoi Régional Lyon', game: 'Valorant', icon: faMedal },
-    { title: 'Top 4 Tournoi Amateur Marseille', game: 'Valorant', icon: faGamepad }
+    {
+      title: "Vainqueur Tournoi Local Paris",
+      game: "Valorant",
+      icon: faTrophy,
+    },
+    {
+      title: "Finaliste Tournoi Régional Lyon",
+      game: "Valorant",
+      icon: faMedal,
+    },
+    {
+      title: "Top 4 Tournoi Amateur Marseille",
+      game: "Valorant",
+      icon: faGamepad,
+    },
   ];
 
   return (

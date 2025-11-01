@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const About = () => {
   const [count, setCount] = useState(0);
@@ -26,33 +26,48 @@ const About = () => {
     <section id="about" className="about-section">
       <div className="container">
         <h2 className="section-title">À Propos de Timelesss</h2>
-        
+
         <div className="about-content">
           <div className="about-story">
             <h3>Notre Histoire</h3>
             <p>
-              Fondée en 2019, Timelesss est née de la passion d'une communauté de joueurs compétitifs et d'amateurs d'esports. 
-              Ce qui a commencé comme un petit groupe de passionnés s'est transformé en une organisation professionnelle reconnue, 
-              compétant dans les plus grands tournois mondiaux.
+              Fondée en 2019, Timelesss est née de la passion d'une communauté
+              de joueurs compétitifs et d'amateurs d'esports. Ce qui a commencé
+              comme un petit groupe de passionnés s'est transformé en une
+              organisation professionnelle reconnue, compétant dans les plus
+              grands tournois mondiaux.
             </p>
             <p>
-              Nous avons toujours cru que l'esports n'était pas qu'un jeu, mais une discipline légitime exigeant dévouement, 
-              stratégie et excellence. Notre parcours nous a menés à remporter plusieurs titres prestigieux et à établir des 
-              partenariats avec les plus grandes marques de l'industrie.
+              Nous avons toujours cru que l'esports n'était pas qu'un jeu, mais
+              une discipline légitime exigeant dévouement, stratégie et
+              excellence. Notre parcours nous a menés à remporter plusieurs
+              titres prestigieux et à établir des partenariats avec les plus
+              grandes marques de l'industrie.
             </p>
           </div>
 
           <div className="about-mission">
             <h3>Notre Mission</h3>
             <p>
-              Développer des talents exceptionnels et créer une plateforme où l'excellence compétitive rencontre l'innovation. 
-              Nous nous engageons à :
+              Développer des talents exceptionnels et créer une plateforme où
+              l'excellence compétitive rencontre l'innovation. Nous nous
+              engageons à :
             </p>
             <ul className="mission-list">
-              <li>Soutenir et former les meilleurs joueurs et équipes d'esports</li>
-              <li>Créer des expériences mémorables pour nos fans et communauté</li>
-              <li>Contribuer à la légitimité et au développement de l'esports professionnel</li>
-              <li>Démontrer l'intégrité, le respect et l'excellence dans tout ce que nous faisons</li>
+              <li>
+                Soutenir et former les meilleurs joueurs et équipes d'esports
+              </li>
+              <li>
+                Créer des expériences mémorables pour nos fans et communauté
+              </li>
+              <li>
+                Contribuer à la légitimité et au développement de l'esports
+                professionnel
+              </li>
+              <li>
+                Démontrer l'intégrité, le respect et l'excellence dans tout ce
+                que nous faisons
+              </li>
             </ul>
           </div>
 
@@ -61,19 +76,29 @@ const About = () => {
             <div className="values-grid">
               <div className="value-card">
                 <h4>Excellence</h4>
-                <p>Nous poursuivons l'excellence dans chaque compétition et projet.</p>
+                <p>
+                  Nous poursuivons l'excellence dans chaque compétition et
+                  projet.
+                </p>
               </div>
               <div className="value-card">
                 <h4>Intégrité</h4>
-                <p>Nous jouons équitablement et honnêtement, dans le respect des règles.</p>
+                <p>
+                  Nous jouons équitablement et honnêtement, dans le respect des
+                  règles.
+                </p>
               </div>
               <div className="value-card">
                 <h4>Communauté</h4>
-                <p>Nous construisons une communauté forte et inclusive d'esports.</p>
+                <p>
+                  Nous construisons une communauté forte et inclusive d'esports.
+                </p>
               </div>
               <div className="value-card">
                 <h4>Innovation</h4>
-                <p>Nous innovons constamment pour rester à la pointe du secteur.</p>
+                <p>
+                  Nous innovons constamment pour rester à la pointe du secteur.
+                </p>
               </div>
             </div>
           </div>

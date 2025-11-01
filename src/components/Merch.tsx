@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import '../styles/Merch.css'; // Ensure to include a CSS file for styling
+import { useState } from "react";
+import "../styles/Merch.css"; // Ensure to include a CSS file for styling
 
 interface Variant {
   id: number;
@@ -20,67 +20,69 @@ const Merch = () => {
   const merchProducts: Product[] = [
     {
       id: 1,
-      name: 'Maillot Homme',
-      price: '39.99€',
-      image: '/assets/merch/maillot-homme.avif',
-      description: 'Maillot officiel pour homme',
-      variants: []
+      name: "Maillot Homme",
+      price: "39.99€",
+      image: "/assets/merch/maillot-homme.avif",
+      description: "Maillot officiel pour homme",
+      variants: [],
     },
     {
       id: 2,
-      name: 'Maillot Femme',
-      price: '39.99€',
-      image: '/assets/merch/maillot-femme.avif',
-      description: 'Maillot officiel pour femme',
-      variants: []
+      name: "Maillot Femme",
+      price: "39.99€",
+      image: "/assets/merch/maillot-femme.avif",
+      description: "Maillot officiel pour femme",
+      variants: [],
     },
     {
       id: 3,
-      name: 'Maillot Enfant',
-      price: '29.99€',
-      image: '/assets/merch/maillot-enfant.avif',
-      description: 'Maillot pour enfant',
-      variants: []
+      name: "Maillot Enfant",
+      price: "29.99€",
+      image: "/assets/merch/maillot-enfant.avif",
+      description: "Maillot pour enfant",
+      variants: [],
     },
     {
       id: 4,
-      name: 'Sweet Unisexe',
-      price: '44.99€',
-      image: '/assets/merch/sweet-unisexe.avif',
-      description: 'Sweat-shirt unisexe confortable',
-      variants: []
+      name: "Sweet Unisexe",
+      price: "44.99€",
+      image: "/assets/merch/sweet-unisexe.avif",
+      description: "Sweat-shirt unisexe confortable",
+      variants: [],
     },
     {
       id: 5,
-      name: 'Bonnet Timeless',
-      price: '24.99€',
-      image: '/assets/merch/bonnet.avif',
+      name: "Bonnet Timeless",
+      price: "24.99€",
+      image: "/assets/merch/bonnet.avif",
       description: "Bonnet officiel de l'équipe",
-      variants: []
+      variants: [],
     },
     {
       id: 6,
-      name: 'Mug Officiel',
-      price: '12.99€',
-      image: '/assets/merch/mug.avif',
-      description: 'Mug aux couleurs de Timeless',
-      variants: []
+      name: "Mug Officiel",
+      price: "12.99€",
+      image: "/assets/merch/mug.avif",
+      description: "Mug aux couleurs de Timeless",
+      variants: [],
     },
     {
       id: 7,
-      name: 'Tapis Souris',
-      price: '19.99€',
-      image: '/assets/merch/tapis-souris.avif',
-      description: 'Tapis souris gaming Timeless',
-      variants: []
-    }
+      name: "Tapis Souris",
+      price: "19.99€",
+      image: "/assets/merch/tapis-souris.avif",
+      description: "Tapis souris gaming Timeless",
+      variants: [],
+    },
   ];
 
-  const [selectedVariants, setSelectedVariants] = useState<Record<number, number>>(
+  const [selectedVariants, setSelectedVariants] = useState<
+    Record<number, number>
+  >(
     merchProducts.reduce((acc: Record<number, number>, product) => {
       acc[product.id] = 0;
       return acc;
-    }, {})
+    }, {}),
   );
 
   const handleVariantChange = (productId: number, direction: number) => {
@@ -89,7 +91,8 @@ const Merch = () => {
       const product = merchProducts.find((p) => p.id === productId);
       if (!product) return prev;
       const totalVariants = product.variants.length;
-      const newVariant = (currentVariant + direction + totalVariants + 1) % (totalVariants + 1);
+      const newVariant =
+        (currentVariant + direction + totalVariants + 1) % (totalVariants + 1);
       return { ...prev, [productId]: newVariant };
     });
   };
@@ -107,7 +110,9 @@ const Merch = () => {
           {merchProducts.map((product) => {
             const selectedVariantIndex = selectedVariants[product.id];
             const selectedVariant =
-              selectedVariantIndex === 0 ? product : product.variants[selectedVariantIndex - 1];
+              selectedVariantIndex === 0
+                ? product
+                : product.variants[selectedVariantIndex - 1];
 
             return (
               <div key={product.id} className="merch-card">
@@ -116,12 +121,22 @@ const Merch = () => {
                     src={selectedVariant.image}
                     alt={selectedVariant.name}
                     className="merch-image"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: "cover" }}
                   />
                   {product.variants.length > 0 && (
                     <div className="variant-controls">
-                      <button className="variant-arrow left" onClick={() => handleVariantChange(product.id, -1)}>◀</button>
-                      <button className="variant-arrow right" onClick={() => handleVariantChange(product.id, 1)}>▶</button>
+                      <button
+                        className="variant-arrow left"
+                        onClick={() => handleVariantChange(product.id, -1)}
+                      >
+                        ◀
+                      </button>
+                      <button
+                        className="variant-arrow right"
+                        onClick={() => handleVariantChange(product.id, 1)}
+                      >
+                        ▶
+                      </button>
                     </div>
                   )}
                 </div>

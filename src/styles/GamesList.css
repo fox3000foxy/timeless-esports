@@ -1,6 +1,10 @@
 .games-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(40, 40, 50, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 30, 0.8) 0%,
+    rgba(40, 40, 50, 0.6) 100%
+  );
 }
 
 .games-showcase {

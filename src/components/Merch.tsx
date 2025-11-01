@@ -20,42 +20,22 @@ const Merch = () => {
   const merchProducts: Product[] = [
     {
       id: 1,
-      name: 'Maillot Domicile',
-      price: '49.99€',
-      image: '/assets/merch/maillot-home.avif',
-      description: 'Maillot officiel de Timeless Esports',
+      name: 'Maillot Homme',
+      price: '39.99€',
+      image: '/assets/merch/maillot-homme.avif',
+      description: 'Maillot officiel pour homme',
       variants: []
     },
     {
       id: 2,
-      name: 'Maillot Homme',
-      price: '39.99€',
-      image: '/assets/merch/polo-homme.avif',
-      description: 'Polo premium pour homme',
-      variants: [
-        {
-          id: 3,
-          name: 'Maillot Homme Variant',
-          image: '/assets/merch/polo-homme-variant.avif'
-        }
-      ]
-    },
-    {
-      id: 4,
       name: 'Maillot Femme',
       price: '39.99€',
-      image: '/assets/merch/polo-femme.avif',
-      description: 'Polo premium pour femme',
-      variants: [
-        {
-          id: 5,
-          name: 'Maillot Femme Variant',
-          image: '/assets/merch/polo-femme-variant.avif'
-        }
-      ]
+      image: '/assets/merch/maillot-femme.avif',
+      description: 'Maillot officiel pour femme',
+      variants: []
     },
     {
-      id: 6,
+      id: 3,
       name: 'Maillot Enfant',
       price: '29.99€',
       image: '/assets/merch/maillot-enfant.avif',
@@ -63,7 +43,15 @@ const Merch = () => {
       variants: []
     },
     {
-      id: 7,
+      id: 4,
+      name: 'Sweet Unisexe',
+      price: '44.99€',
+      image: '/assets/merch/sweet-unisexe.avif',
+      description: 'Sweat-shirt unisexe confortable',
+      variants: []
+    },
+    {
+      id: 5,
       name: 'Bonnet Timeless',
       price: '24.99€',
       image: '/assets/merch/bonnet.avif',
@@ -71,15 +59,7 @@ const Merch = () => {
       variants: []
     },
     {
-      id: 8,
-      name: 'Bandeau',
-      price: '14.99€',
-      image: '/assets/merch/bandeau.avif',
-      description: 'Bandeau Timeless Esports',
-      variants: []
-    },
-    {
-      id: 9,
+      id: 6,
       name: 'Mug Officiel',
       price: '12.99€',
       image: '/assets/merch/mug.avif',
@@ -87,7 +67,7 @@ const Merch = () => {
       variants: []
     },
     {
-      id: 10,
+      id: 7,
       name: 'Tapis Souris',
       price: '19.99€',
       image: '/assets/merch/tapis-souris.avif',

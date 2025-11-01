@@ -3,23 +3,70 @@ import '../styles/Schedule.css';
 
 const Schedule = () => {
     const [upcomingMatches] = useState([
-        // {
-        //     opponent: 'Team Vitality',
-        //     game: 'League of Legends',
-        //     date: '2027-11-15T20:00:00',
-        //     tournament: 'LFL 2025',
-        //     streamUrl: 'https://twitch.tv/otplol_',
-        //     logoUrl: '/assets/teams/vitality.avif'
-        // },
         {
             opponent: 'Karmine Corp',
             game: 'Valorant',
             date: '2027-11-18T21:00:00',
-            tournament: 'VCT France',
+            tournament: 'VCT EMEA',
             streamUrl: 'https://twitch.tv/valorant_fr',
             logoUrl: '/assets/teams/kcorp.avif'
+        },
+        {
+            opponent: 'Team Vitality',
+            game: 'Valorant',
+            date: '2027-11-25T19:30:00',
+            tournament: 'Challengers France',
+            streamUrl: 'https://twitch.tv/valorant_fr',
+            logoUrl: '/assets/teams/vitality.avif'
+        },
+        {
+            opponent: 'M8',
+            game: 'Valorant',
+            date: '2027-11-30T18:00:00',
+            tournament: 'Game Changers EMEA',
+            streamUrl: 'https://twitch.tv/valorant_fr',
+            logoUrl: '/assets/teams/m8.avif'
+        },
+        {
+            opponent: 'Solary',
+            game: 'Valorant',
+            date: '2027-12-02T20:15:00',
+            tournament: 'VRL France',
+            streamUrl: 'https://twitch.tv/valorant_fr',
+            logoUrl: '/assets/teams/solary.avif'
+        },
+        {
+            opponent: 'Aegis',
+            game: 'Valorant',
+            date: '2027-12-05T17:45:00',
+            tournament: 'Tournoi Local Paris',
+            streamUrl: 'https://twitch.tv/valorant_fr',
+            logoUrl: '/assets/teams/aegis.avif'
+        },
+        {
+            opponent: 'Team GO',
+            game: 'Valorant',
+            date: '2027-12-08T19:00:00',
+            tournament: 'Championnat de France',
+            streamUrl: 'https://twitch.tv/valorant_fr',
+            logoUrl: '/assets/teams/teamgo.avif'
+        },
+        {
+            opponent: 'Mandatory',
+            game: 'Valorant',
+            date: '2027-12-12T21:30:00',
+            tournament: 'Qualificatifs Masters',
+            streamUrl: 'https://twitch.tv/valorant_fr',
+            logoUrl: '/assets/teams/mandatory.avif'
+        },
+        {
+            opponent: 'Team BDS',
+            game: 'Valorant',
+            date: '2027-12-15T20:00:00',
+            tournament: 'VCT Ascension EMEA',
+            streamUrl: 'https://twitch.tv/valorant_fr',
+            logoUrl: '/assets/teams/bds.avif'
         }
-        // Ajoutez d'autres matchs
     ]);
 
     useEffect(() => {
@@ -55,7 +102,7 @@ const Schedule = () => {
                             </div>
                             <div className="match-teams">
                                 <div className="team">
-                                    <img src="/assets/logo.avif" alt="Timeless" className="team-logo" />
+                                    <img src="/assets/logo-no-text.avif" alt="Timeless" className="team-logo" />
                                     <span>Timeless</span>
                                 </div>
                                 <span className="vs">VS</span>

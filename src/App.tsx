@@ -9,6 +9,7 @@ import {
   GamesList,
   Header,
   Hero,
+  History,
   Merch,
   News,
   Recruitment,
@@ -64,7 +65,7 @@ function App() {
               <Header activeSection={activeSection} setActiveSection={setActiveSection} />
               <main className="main">
                 <Hero />
-                {/* <History /> */}
+                <History />
                 <GamesList />
                 <Schedule />
                 <Team />

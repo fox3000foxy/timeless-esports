@@ -41,7 +41,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
           <img src="/assets/logo.avif" style={{ width: "64px", marginRight: "2rem" }} alt="Logo Timeless" />
           <div className="logo-placeholder">
             <span>TIMELESS</span>
-            <span className="esport-text">ESPORT</span>
+            {/* <span className="esport-text">ESPORT</span> */}
           </div>
         </div>
         <button 

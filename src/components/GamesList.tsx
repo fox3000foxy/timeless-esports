@@ -3,23 +3,70 @@ import '../styles/GamesList.css';
 
 const GamesList = () => {
   const games = [
-    // {
-    //   name: 'League of Legends',
-    //   image: '/assets/games/lol.avif',
-    //   division: 'LFL Division 1',
-    //   rank: '#2',
-    //   nextMatch: '15 Nov. 2027',
-    //   roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
-    // },
     {
-      name: 'Valorant',
+      name: 'Valorant VCT EMEA',
       image: '/assets/games/valorant.avif',
       division: 'VCT EMEA',
       rank: '#4',
-      nextMatch: '18 Nov. 2027',
+      nextMatch: 'vs Karmine Corp - 18 Nov. 2027',
+      roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
+    },
+    {
+      name: 'Valorant Challengers',
+      image: '/assets/games/valorant.avif',
+      division: 'Challengers France',
+      rank: '#2',
+      nextMatch: 'vs Team Vitality - 25 Nov. 2027',
+      roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
+    },
+    {
+      name: 'Valorant Game Changers',
+      image: '/assets/games/valorant.avif',
+      division: 'Game Changers EMEA',
+      rank: '#1',
+      nextMatch: 'vs M8 - 30 Nov. 2027',
+      roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
+    },
+    {
+      name: 'VRL France',
+      image: '/assets/games/valorant.avif',
+      division: 'Valorant Regional League France',
+      rank: '#3',
+      nextMatch: 'vs Solary - 2 Déc. 2027',
+      roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
+    },
+    {
+      name: 'Tournoi Local Paris',
+      image: '/assets/games/valorant.avif',
+      division: 'Compétition Locale',
+      rank: '#1',
+      nextMatch: 'vs Aegis - 5 Déc. 2027',
+      roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
+    },
+    {
+      name: 'French Championship',
+      image: '/assets/games/valorant.avif',
+      division: 'Championnat de France',
+      rank: '#2',
+      nextMatch: 'vs Team GO - 8 Déc. 2027',
+      roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
+    },
+    {
+      name: 'Masters Qualifier',
+      image: '/assets/games/valorant.avif',
+      division: 'Qualificatifs Masters',
+      rank: '#5',
+      nextMatch: 'vs Mandatory - 12 Déc. 2027',
+      roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
+    },
+    {
+      name: 'VCT Ascension',
+      image: '/assets/games/valorant.avif',
+      division: 'VCT Ascension EMEA',
+      rank: '#3',
+      nextMatch: 'vs Team BDS - 15 Déc. 2027',
       roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
     }
-    // Ajoutez d'autres jeux
   ];
 
   const [activeGame, setActiveGame] = useState(0);

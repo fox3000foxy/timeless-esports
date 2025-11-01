@@ -76,7 +76,7 @@ export const teamMembersData: TeamMember[] = [
         },
         nickname: "TheUpsilonGirl",
         achievements: ['Local Tournament Winner', 'Best Duelist of the Month', 'Team Captain & Leader'],
-        instagram: 'https://www.instagram.com/emitanaka_official' // Ajout du lien Instagram
+        instagram: 'https://www.instagram.com/theupsilongirl' // Ajout du lien Instagram
     },
     {
         name: 'Marvin',

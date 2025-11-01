@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Schedule.css';
+import '../styles/Schedule.css';
 
 const Schedule = () => {
     const [upcomingMatches] = useState([

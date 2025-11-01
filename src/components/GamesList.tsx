@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './GamesList.css';
+import '../styles/GamesList.css';
 
 const GamesList = () => {
   const games = [

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Merch.css'; // Ensure to include a CSS file for styling
+import '../styles/Merch.css'; // Ensure to include a CSS file for styling
 
 interface Variant {
   id: number;

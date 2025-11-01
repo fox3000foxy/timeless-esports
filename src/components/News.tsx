@@ -1,4 +1,4 @@
-import './News.css';
+import '../styles/News.css';
 
 const News = () => {
   const newsArticles = [

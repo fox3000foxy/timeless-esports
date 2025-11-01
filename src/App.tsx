@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
+import './styles/App.css';
 
 // Import des composants
 import {
@@ -26,7 +26,7 @@ function App() {
     const handleScroll = () => {
       const sections = [
         'home',
-        // 'achievements',
+        'history',
         'games',
         'schedule',
         'team',
@@ -64,7 +64,7 @@ function App() {
               <Header activeSection={activeSection} setActiveSection={setActiveSection} />
               <main className="main">
                 <Hero />
-                {/* <Achievements /> */}
+                {/* <History /> */}
                 <GamesList />
                 <Schedule />
                 <Team />

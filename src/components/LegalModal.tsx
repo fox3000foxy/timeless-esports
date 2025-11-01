@@ -1,4 +1,4 @@
-import './LegalModal.css';
+import '../styles/LegalModal.css';
 
 interface LegalModalProps {
   isOpen: boolean;

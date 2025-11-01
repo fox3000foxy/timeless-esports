@@ -1,10 +1,10 @@
-# Timeless Esport - Site Web Officiel
+# Timeless - Site Web Officiel
 
-Site web moderne et responsive pour l'équipe d'esport **Timeless Esport**, développé avec React, TypeScript et Vite.
+Site web moderne et responsive pour l'équipe d'esport **Timeless**, développé avec React, TypeScript et Vite.
 
 ## 🎮 À propos
 
-Timeless Esport est une équipe d'esport compétitive spécialisée dans plusieurs jeux :
+Timeless est une équipe d'esport compétitive spécialisée dans plusieurs jeux :
 - **Valorant**
 - **League of Legends** 
 - **Counter-Strike 2**
@@ -81,7 +81,7 @@ src/
 ## 🎯 Sections du site
 
 ### 1. **Accueil (Hero)**
-- Logo et branding Timeless Esport
+- Logo et branding Timeless
 - Statistiques de l'équipe
 - Effets visuels animés
 
@@ -151,7 +151,7 @@ Les fichiers optimisés seront générés dans le dossier `dist/`.
 
 ## 📄 Licence
 
-© 2024 Timeless Esport. Tous droits réservés.
+© 2024 Timeless. Tous droits réservés.
 
 ---
 

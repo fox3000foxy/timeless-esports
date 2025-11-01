@@ -88,7 +88,11 @@ const Schedule = () => {
         <section className="schedule-section" id="schedule">
             <div className="container">
                 <h2 className="section-title">Matchs à Venir</h2>
-                <div className="schedule-grid">
+                <div className="schedule-grid" style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))',
+                    gap: '20px'
+                }}>
                     {upcomingMatches.map((match, index) => (
                         <div
                             key={index}

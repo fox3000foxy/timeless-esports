@@ -22,7 +22,7 @@ const Footer = () => {
         }}
       >
         <p style={{ marginBottom: '1rem' }}>
-          &copy; 2025 Timeless Esport. Tous droits réservés.
+          &copy; 2025 Timeless. Tous droits réservés.
         </p>
         <div style={{ 
           display: 'flex', 

@@ -16,7 +16,7 @@ const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
         <section>
           <h3>1. Informations légales</h3>
           <p>
-            Timeless Esport<br />
+            Timeless<br />
             Société fictive à responsabilité limitée<br />
             Capital social : 10 000€<br />
             Siège social : 123 Avenue des Jeux, 75001 Paris<br />
@@ -39,17 +39,17 @@ const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
           <h3>3. Propriété intellectuelle</h3>
           <p>
             L'ensemble des éléments composant ce site (textes, images, logos, etc.) est protégé par le droit d'auteur
-            et reste la propriété exclusive de Timeless Esport. Toute reproduction, représentation ou diffusion,
+            et reste la propriété exclusive de Timeless. Toute reproduction, représentation ou diffusion,
             en tout ou partie, du contenu de ce site sur quelque support que ce soit est interdite sans l'autorisation
-            expresse de Timeless Esport.
+            expresse de Timeless.
           </p>
         </section>
 
         <section>
           <h3>4. Responsabilité</h3>
           <p>
-            Timeless Esport s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site.
-            Toutefois, Timeless Esport ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations
+            Timeless s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site.
+            Toutefois, Timeless ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations
             mises à disposition sur ce site.
           </p>
         </section>

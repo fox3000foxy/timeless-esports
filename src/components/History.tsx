@@ -42,7 +42,7 @@ const History = () => {
           <div className="history-main">
             <h3 className="history-title">Une passion devenue famille</h3>
             <p className="history-description">
-              <strong>Timeless Esports</strong> est née d'un rêve partagé : prouver que la passion et la persévérance peuvent traverser les frontières.
+              <strong>Timelesss</strong> est née d'un rêve partagé : prouver que la passion et la persévérance peuvent traverser les frontières.
               À l'origine du projet, <strong>Emi Tanaka</strong>, une jeune franco-japonaise installée en Normandie, décide de créer une équipe à son image : humaine, ambitieuse et unie.
             </p>
 

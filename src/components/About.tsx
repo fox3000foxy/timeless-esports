@@ -25,13 +25,13 @@ const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="container">
-        <h2 className="section-title">À Propos de Timeless Esports</h2>
+        <h2 className="section-title">À Propos de Timelesss</h2>
         
         <div className="about-content">
           <div className="about-story">
             <h3>Notre Histoire</h3>
             <p>
-              Fondée en 2019, Timeless Esports est née de la passion d'une communauté de joueurs compétitifs et d'amateurs d'esports. 
+              Fondée en 2019, Timelesss est née de la passion d'une communauté de joueurs compétitifs et d'amateurs d'esports. 
               Ce qui a commencé comme un petit groupe de passionnés s'est transformé en une organisation professionnelle reconnue, 
               compétant dans les plus grands tournois mondiaux.
             </p>

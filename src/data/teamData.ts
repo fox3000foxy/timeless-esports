@@ -19,7 +19,7 @@ export interface TeamMember {
     instagram: string; // Ajout de la propriété Instagram
 }
 
-// Données des membres de l'équipe Timeless Esport
+// Données des membres de l'équipe Timeless
 export const teamMembersData: TeamMember[] = [
     {
         name: 'Emma',

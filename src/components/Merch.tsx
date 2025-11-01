@@ -100,7 +100,7 @@ const Merch = () => {
       <div className="container">
         <h2 className="section-title">Boutique Officielle</h2>
         <p className="section-subtitle">
-          Portez les couleurs de Timeless Esports avec style
+          Portez les couleurs de Timelesss avec style
         </p>
 
         <div className="merch-grid">

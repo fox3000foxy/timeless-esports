@@ -1,4 +1,4 @@
-# Design Horizontal Team Lineup - Timeless Esport
+# Design Horizontal Team Lineup - Timeless
 
 ## 🏆 Nouveau Concept : Lineup Photographique
 

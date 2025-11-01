@@ -122,7 +122,7 @@ const Recruitment = () => {
               <div 
                 key={index} 
                 className="position-card"
-                data-aos="fade-up"
+               
                 data-aos-delay={index * 100}
               >
                 <h4>{pos.game}</h4>
@@ -197,7 +197,7 @@ const Recruitment = () => {
                                     required
                                 >
                                     <option value="">Sélectionnez un jeu</option>
-                                    <option value="lol">League of Legends</option>
+                                    {/* <option value="lol">League of Legends</option> */}
                                     <option value="valorant">Valorant</option>
                                 </select>
                             </div>

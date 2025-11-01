@@ -30,7 +30,7 @@ const Achievements = () => {
             <div 
               key={index} 
               className="achievement-card"
-              data-aos="fade-up"
+             
               data-aos-delay={index * 100}
             >
               <div className="achievement-icon">{achievement.icon}</div>

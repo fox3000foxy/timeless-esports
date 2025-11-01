@@ -3,21 +3,21 @@ import './GamesList.css';
 
 const GamesList = () => {
   const games = [
-    {
-      name: 'League of Legends',
-      image: '/assets/games/lol.avif',
-      division: 'LFL Division 1',
-      rank: '#2',
-      nextMatch: '15 Nov. 2027',
-      roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
-    },
+    // {
+    //   name: 'League of Legends',
+    //   image: '/assets/games/lol.avif',
+    //   division: 'LFL Division 1',
+    //   rank: '#2',
+    //   nextMatch: '15 Nov. 2027',
+    //   roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
+    // },
     {
       name: 'Valorant',
       image: '/assets/games/valorant.avif',
       division: 'VCT EMEA',
       rank: '#4',
       nextMatch: '18 Nov. 2027',
-      roster: ['Lin', 'Emma', 'Marvin']
+      roster: ['Emi', 'Rami', 'Lin', 'Emma', 'Marvin']
     }
     // Ajoutez d'autres jeux
   ];

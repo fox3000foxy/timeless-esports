@@ -20,9 +20,9 @@ const Hero = () => {
       }, 10);
     };
 
-    animateCounter(0, 100, 1000, setCount);
-    animateCounter(0, 5000, 1000, setViewers);
-    animateCounter(0, 120000, 1000, setFollowers);
+    animateCounter(0, 3, 1000, setCount);
+    animateCounter(0, 53, 1000, setViewers);
+    animateCounter(0, 1261, 1000, setFollowers);
   }, []);
 
   return (

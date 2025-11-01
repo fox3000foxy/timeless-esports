@@ -20,7 +20,7 @@ const Team = () => {
             <div className="container">
                 <h2 className="section-title">Notre Équipe</h2>
                 <p className="section-subtitle">
-                    Découvrez les légendes qui forment l'élite de Timeless Esport
+                    Découvrez les légendes qui forment l'élite de Timeless
                 </p>
 
                 {/* Photo de groupe alignée horizontalement */}

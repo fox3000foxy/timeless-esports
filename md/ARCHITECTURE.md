@@ -1,4 +1,4 @@
-# Structure des Composants - Timeless Esport
+# Structure des Composants - Timeless
 
 ## 📁 Architecture des Composants
 

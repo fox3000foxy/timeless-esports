@@ -1,4 +1,4 @@
-# Documentation de l'Équipe Timeless Esport
+# Documentation de l'Équipe Timeless
 
 ## 👥 Membres de l'Équipe
 
@@ -85,4 +85,4 @@ src/
 - **Classes modulaires** pour chaque élément
 - **Media queries** pour responsive
 
-Cette nouvelle structure offre une présentation professionnelle et immersive de l'équipe Timeless Esport ! 🏆
+Cette nouvelle structure offre une présentation professionnelle et immersive de l'équipe Timeless ! 🏆

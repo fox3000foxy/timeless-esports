@@ -1,4 +1,4 @@
-# Design Team en Bannières - Timeless Esport
+# Design Team en Bannières - Timeless
 
 ## 🎨 Nouveau Concept : Bannières Interactives
 

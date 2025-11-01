@@ -38,7 +38,7 @@ const Hero = () => {
     >
       <div className="hero-content">
         <h1 className="hero-title">
-          TIMELESS <span className="highlight">ESPORT</span>
+          TIMELESS
         </h1>
         <p className="hero-subtitle">
           L'excellence dans l'esport, au-delà du temps

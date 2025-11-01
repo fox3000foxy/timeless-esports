@@ -34,7 +34,7 @@ const News = () => {
     },
     {
       title: 'Nouveau partenariat stratégique',
-      content: 'Timeless Esport annonce un partenariat stratégique pour la saison 2025.',
+      content: 'Timeless annonce un partenariat stratégique pour la saison 2025.',
       date: '20 octobre 2024'
     },
     {
@@ -59,7 +59,7 @@ const News = () => {
     },
     {
       title: 'Annonce d’un Bootcamp International',
-      content: 'Timeless Esport organise un bootcamp international avec des équipes de renom pour se préparer aux prochaines compétitions. Une opportunité unique pour échanger des stratégies et renforcer les liens dans la communauté esport.',
+      content: 'Timeless organise un bootcamp international avec des équipes de renom pour se préparer aux prochaines compétitions. Une opportunité unique pour échanger des stratégies et renforcer les liens dans la communauté esport.',
       date: '30 octobre 2025'
     }
   ];

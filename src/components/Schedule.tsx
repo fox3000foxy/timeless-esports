@@ -92,7 +92,6 @@ const Schedule = () => {
           className="schedule-grid"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(500px, 1fr))",
             gap: "20px",
           }}
         >

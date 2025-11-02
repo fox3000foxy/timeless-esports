@@ -19,15 +19,13 @@ const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
             <p>
               Timeless
               <br />
-              Société fictive à responsabilité limitée
+              Organisation esportive professionnelle
               <br />
-              Capital social : 10 000€
+              Siège social : 216 Rue de Rosny, 93100 Montreuil, France
               <br />
-              Siège social : 123 Avenue des Jeux, 75001 Paris
+              Email : contact@timeless-esports.com
               <br />
-              SIRET : 123 456 789 00001
-              <br />
-              TVA Intracommunautaire : FR 12 345678901
+              Directeur de publication : Timeless Management
             </p>
           </section>
 
@@ -102,7 +100,7 @@ const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
               Conformément au RGPD, vous disposez d'un droit d'accès, de
               rectification, de suppression et de portabilité de vos données
               personnelles. Pour exercer ces droits, contactez-nous à
-              privacy@timeless-esport.com
+              contact@timeless-esports.com
             </p>
           </section>
 

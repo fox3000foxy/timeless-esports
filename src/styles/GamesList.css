@@ -124,3 +124,148 @@
   color: #ffffff;
   font-weight: 500;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .games-section {
+    padding: 2rem 0;
+  }
+
+  .games-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .game-nav-item {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    padding: 0.6rem 1rem;
+  }
+
+  .game-banner {
+    height: 200px;
+  }
+
+  .game-info-overlay {
+    padding: 1.5rem;
+  }
+
+  .game-info-overlay h3 {
+    font-size: 1.5rem;
+  }
+
+  .game-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .game-roster {
+    padding: 1.5rem;
+  }
+
+  .roster-list {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .player-avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .games-section {
+    padding: 1.5rem 0;
+  }
+
+  .game-nav-item {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .game-banner {
+    height: 150px;
+  }
+
+  .game-info-overlay {
+    padding: 1rem;
+  }
+
+  .game-info-overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .game-stats {
+    gap: 0.5rem;
+  }
+
+  .stat .label {
+    font-size: 0.8rem;
+  }
+
+  .stat .value {
+    font-size: 1rem;
+  }
+
+  .game-roster {
+    padding: 1rem;
+  }
+
+  .game-roster h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .roster-list {
+    gap: 1rem;
+  }
+
+  .player-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .roster-player span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .games-nav {
+    gap: 2rem;
+  }
+
+  .game-nav-item {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .game-banner {
+    height: 400px;
+  }
+
+  .game-info-overlay {
+    padding: 3rem;
+  }
+
+  .game-info-overlay h3 {
+    font-size: 2.5rem;
+  }
+
+  .game-stats {
+    gap: 3rem;
+  }
+
+  .roster-list {
+    gap: 3rem;
+  }
+
+  .player-avatar {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -17,15 +17,25 @@ const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
           <section>
             <h3>1. Informations légales</h3>
             <p>
-              Timeless
+              <strong>Raison sociale :</strong> Timeless Esports SARL
               <br />
-              Organisation esportive professionnelle
+              <strong>Forme juridique :</strong> Société fictive à Responsabilité Limitée (SARL)
               <br />
-              Siège social : 216 Rue de Rosny, 93100 Montreuil, France
+              <strong>Capital social :</strong> 312€
               <br />
-              Email : contact@timeless-esports.com
+              <strong>Siège social :</strong> 216 Rue de Rosny, 93100 Montreuil, France
               <br />
-              Directeur de publication : Timeless Management
+              {/* <strong>SIRET :</strong> 894 567 123 00015
+              <br /> */}
+              <strong>Code APE :</strong> 9312Z (Activités de clubs de sports)
+              <br />
+              <strong>TVA Intracommunautaire :</strong> FR 89 894567123
+              <br />
+              <strong>Email :</strong> contact@timeless-esports.com
+              <br />
+              <strong>Directeur de publication :</strong> Rami Vemuri
+              <br />
+              <strong>Responsable éditorial :</strong> Emi Tanaka
             </p>
           </section>
 

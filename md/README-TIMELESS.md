@@ -44,7 +44,7 @@ Le site utilise une palette de couleurs inspirée du logo officiel :
 
 ### Prérequis
 - Node.js 18+
-- npm ou yarn
+- Bun
 
 ### Installation
 ```bash
@@ -53,18 +53,18 @@ git clone [repository-url]
 cd timeless-esports-v2
 
 # Installer les dépendances
-npm install
+bun install
 
 # Lancer le serveur de développement
-npm run dev
+bun run dev
 ```
 
 ### Scripts disponibles
 ```bash
-npm run dev      # Serveur de développement
-npm run build    # Build de production
-npm run preview  # Prévisualisation du build
-npm run lint     # Vérification du code
+bun run dev      # Serveur de développement
+bun run build    # Build de production
+bun run preview  # Prévisualisation du build
+bun run lint     # Vérification du code
 ```
 
 ## 📁 Structure du projet

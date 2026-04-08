@@ -159,11 +159,6 @@ section {
   background-clip: text;
 }
 
-.highlight {
-  color: var(--primary-red);
-  text-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
-}
-
 .hero-subtitle {
   font-size: 1.5rem;
   color: var(--silver);
@@ -369,123 +364,10 @@ section {
 }
 
 /* Info box qui apparaît au hover */
-.member-hover-info {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
-  width: 740px;
-  background: linear-gradient(
-    135deg,
-    rgba(15, 15, 15, 0.98) 0%,
-    rgba(26, 26, 26, 0.98) 100%
-  );
-  border: 3px solid var(--primary-red);
-  border-radius: 16px;
-  padding: 1.5rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
-  pointer-events: none;
-  z-index: 200;
-}
-
-.team-member-photo:hover .member-hover-info {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-  box-shadow:
-    0 0 60px 5px rgba(220, 38, 38, 0.4),
-    0 20px 40px rgba(0, 0, 0, 0.8);
-  pointer-events: auto;
-}
 
 /* Header de l'info box */
-.member-hover-info .info-header {
-  border-bottom: 2px solid var(--primary-red);
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-}
-
-.member-hover-info .info-header h3 {
-  font-size: 1.8rem;
-  font-weight: 900;
-  color: var(--white);
-  margin-bottom: 0.3rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.member-hover-info .role {
-  color: var(--primary-red);
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-bottom: 0.2rem;
-}
-
-.member-hover-info .game {
-  color: var(--silver);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
 /* Contenu de l'info box */
-.member-hover-info .info-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.member-hover-info .bio {
-  color: var(--silver);
-  font-size: 0.9rem;
-  line-height: 1.5;
-  font-style: italic;
-}
-
-.member-hover-info .stats,
-.member-hover-info .achievements {
-  background: rgba(220, 38, 38, 0.08);
-  padding: 0.8rem;
-  border-radius: 8px;
-  border-left: 3px solid var(--primary-red);
-}
-
-.member-hover-info .stats h4,
-.member-hover-info .achievements h4 {
-  color: var(--primary-red);
-  font-size: 0.9rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.member-hover-info .stats p {
-  color: var(--white);
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.member-hover-info .achievement-badge {
-  display: block;
-  background: var(--dark-gray);
-  color: var(--white);
-  padding: 0.4rem 0.8rem;
-  border-radius: 12px;
-  font-size: 0.75rem;
-  margin-bottom: 0.4rem;
-  border: 1px solid rgba(220, 38, 38, 0.3);
-  transition: all 0.3s ease;
-}
-
-.member-hover-info .achievement-badge:hover {
-  background: var(--primary-red);
-  border-color: var(--primary-red);
-  transform: translateX(4px);
-}
 
 /* Responsive pour la photo de groupe */
 @media (max-width: 1200px) {
@@ -497,11 +379,6 @@ section {
   /* .team-member-photo .member-image {
     height: 450px;
   } */
-
-  .member-hover-info {
-    width: 280px;
-    padding: 1.2rem;
-  }
 }
 
 @media (max-width: 900px) {
@@ -626,95 +503,6 @@ section {
 }
 
 /* Contact Section */
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.contact-info h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--white);
-}
-
-.contact-info p {
-  color: var(--silver);
-  margin-bottom: 2rem;
-  line-height: 1.8;
-}
-
-.contact-links {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.contact-link {
-  padding: 0.8rem 1.5rem;
-  background: var(--gradient-red);
-  color: var(--white);
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.contact-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(220, 38, 38, 0.3);
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.form-input,
-.form-textarea {
-  padding: 1rem;
-  background: var(--dark-gray);
-  border: 2px solid var(--light-gray);
-  border-radius: 8px;
-  color: var(--white);
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  outline: none;
-  border-color: var(--primary-red);
-}
-
-.form-textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.submit-btn {
-  padding: 1rem 2rem;
-  background: var(--gradient-red);
-  color: var(--white);
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-
-.submit-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(220, 38, 38, 0.3);
-}
 
 /* Footer */
 .footer {
@@ -744,45 +532,16 @@ section {
     gap: 2rem;
   }
 
-  .contact-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
   .achievements-grid,
   .news-grid {
     grid-template-columns: 1fr;
   }
 
   /* Team lineup responsive - Stack vertical sur tablette */
-  .team-lineup {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
 
   .player-avatar {
     width: 120px;
     height: 120px;
-  }
-
-  .player-name span {
-    font-size: 1.2rem;
-  }
-
-  .player-expanded-card {
-    width: 320px;
-    padding: 1.5rem;
-    top: 160px;
-  }
-
-  .expanded-avatar {
-    width: 60px;
-    height: 60px;
-  }
-
-  .expanded-info h3 {
-    font-size: 1.4rem;
   }
 
   .section-title {
@@ -810,9 +569,6 @@ section {
   }
 
   /* Team lineup mobile - Plus compact */
-  .team-lineup {
-    gap: 1.5rem;
-  }
 
   .player-avatar {
     width: 100px;
@@ -820,80 +576,18 @@ section {
     border-width: 3px;
   }
 
-  .player-container:hover .player-avatar {
-    transform: scale(1.05);
-    border-width: 4px;
-  }
-
-  .player-name span {
-    font-size: 1rem;
-  }
-
-  .player-expanded-card {
-    width: 280px;
-    padding: 1rem;
-    top: 140px;
-  }
-
-  .expanded-header {
-    margin-bottom: 1rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .expanded-avatar {
-    width: 50px;
-    height: 50px;
-  }
-
-  .expanded-info h3 {
-    font-size: 1.2rem;
-  }
-
-  .expanded-role {
-    font-size: 1rem;
-  }
-
-  .expanded-game {
-    font-size: 0.8rem;
-  }
-
-  .expanded-bio p {
-    font-size: 0.85rem;
-  }
-
   .achievement-item {
     font-size: 0.7rem;
     padding: 0.3rem 0.6rem;
-  }
-
-  .avatar-fallback {
-    font-size: 2rem;
   }
 }
 
 /* Pour très petits écrans - Lineup horizontal avec scroll */
 @media (max-width: 380px) {
-  .team-lineup {
-    flex-direction: row;
-    overflow-x: auto;
-    padding: 1rem;
-    gap: 1rem;
-    justify-content: flex-start;
-  }
-
-  .player-container {
-    flex-shrink: 0;
-  }
 
   .player-avatar {
     width: 80px;
     height: 80px;
-  }
-
-  .player-expanded-card {
-    width: 250px;
-    padding: 0.75rem;
-    top: 120px;
   }
 }
 

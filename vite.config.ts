@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react';
+import { visualizer } from "rollup-plugin-visualizer";
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
@@ -6,6 +7,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig({
   build: {
     assetsInlineLimit: 0, // Évite l'inlining des images
+    cssMinify: false, // Désactiver lightningcss
+    cssCodeSplit: true, // Activer le découpage CSS
   },
   plugins: [
     react(),
@@ -66,6 +69,10 @@ export default defineConfig({
         start_url: '/',
         scope: '/'
       }
-    })
+    }),
+    visualizer({
+      filename: "./dist/bundle-analysis.html",
+      open: true, // Ouvrir automatiquement le rapport après le build
+    }),
   ]
 })

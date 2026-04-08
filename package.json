@@ -21,6 +21,7 @@
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.14.0",
     "rollup-plugin-purgecss": "^8.0.0",
+    "rollup-plugin-visualizer": "^7.0.1",
     "vite-plugin-pwa": "^1.2.0"
   },
   "devDependencies": {

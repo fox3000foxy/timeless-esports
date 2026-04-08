@@ -1,23 +1,21 @@
-import { useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./styles/App.css";
 
-// Import des composants
-import {
-  Contact,
-  Footer,
-  GamesList,
-  Header,
-  Hero,
-  History,
-  Merch,
-  News,
-  Recruitment,
-  Schedule,
-  Sponsors,
-  Team,
-  Tournaments,
-} from "./components";
+// Lazy loading des composants
+const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
+const GamesList = lazy(() => import("./components/GamesList"));
+const Header = lazy(() => import("./components/Header"));
+const Hero = lazy(() => import("./components/Hero"));
+const History = lazy(() => import("./components/History"));
+const Merch = lazy(() => import("./components/Merch"));
+const News = lazy(() => import("./components/News"));
+const Recruitment = lazy(() => import("./components/Recruitment"));
+const Schedule = lazy(() => import("./components/Schedule"));
+const Sponsors = lazy(() => import("./components/Sponsors"));
+const Team = lazy(() => import("./components/Team"));
+const Tournaments = lazy(() => import("./components/Tournaments"));
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -64,26 +62,28 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="app">
-              <Header
-                activeSection={activeSection}
-                setActiveSection={setActiveSection}
-              />
-              <main className="main">
-                <Hero />
-                <History />
-                <GamesList />
-                <Schedule />
-                <Team />
-                <Tournaments />
-                <Sponsors />
-                <Merch />
-                <News />
-                <Recruitment />
-                <Contact />
-              </main>
-              <Footer />
-            </div>
+            <Suspense fallback={<div>Chargement...</div>}>
+              <div className="app">
+                <Header
+                  activeSection={activeSection}
+                  setActiveSection={setActiveSection}
+                />
+                <main className="main">
+                  <Hero />
+                  <History />
+                  <GamesList />
+                  <Schedule />
+                  <Team />
+                  <Tournaments />
+                  <Sponsors />
+                  <Merch />
+                  <News />
+                  <Recruitment />
+                  <Contact />
+                </main>
+                <Footer />
+              </div>
+            </Suspense>
           }
         />
         {/* <Route path="/player/:playerId" element={<PlayerProfile />} /> */}

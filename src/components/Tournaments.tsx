@@ -1,11 +1,12 @@
 import {
-  faGamepad,
-  faMedal,
-  faTrophy,
+    faGamepad,
+    faMedal,
+    faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { memo } from "react";
 
-const Tournaments = () => {
+const Tournaments = memo(() => {
   const achievements = [
     {
       title: "Vainqueur Tournoi Local Paris",
@@ -42,6 +43,6 @@ const Tournaments = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Tournaments;

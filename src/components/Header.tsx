@@ -53,9 +53,9 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
 					onClick={toggleMenu}
 					aria-label="Menu"
 				>
-					<span></span>
-					<span></span>
-					<span></span>
+					<span />
+					<span />
+					<span />
 				</button>
 				<nav className={`navigation ${isMenuOpen ? "open" : ""}`}>
 					{navigation.map((item) => (

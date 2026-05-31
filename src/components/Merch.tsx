@@ -89,7 +89,7 @@ const Merch = () => {
 		setSelectedVariants((prev) => {
 			const currentVariant = prev[productId];
 			const product = merchProducts.find((p) => p.id === productId);
-			if (!product) return prev;
+			if (!product) { return prev; }
 			const totalVariants = product.variants.length;
 			const newVariant =
 				(currentVariant + direction + totalVariants + 1) % (totalVariants + 1);
@@ -99,7 +99,7 @@ const Merch = () => {
 
 	return (
 		<section id="merch" className="merch-section">
-			<div className="merch-background-pattern"></div>
+			<div className="merch-background-pattern" />
 			<div className="container">
 				<h2 className="section-title">Boutique Officielle</h2>
 				<p className="section-subtitle">

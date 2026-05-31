@@ -16,7 +16,7 @@ const Team = () => {
 
 	return (
 		<section id="team" className="team-section">
-			<div className="team-background-pattern"></div>
+			<div className="team-background-pattern" />
 			<div className="container">
 				<h2 className="section-title">Notre Équipe</h2>
 				<p className="section-subtitle">

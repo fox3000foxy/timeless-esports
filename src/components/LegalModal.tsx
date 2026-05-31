@@ -7,7 +7,7 @@ interface LegalModalProps {
 }
 
 const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
-	if (!isOpen) return null;
+	if (!isOpen) { return null; }
 
 	const content =
 		type === "legal" ? (

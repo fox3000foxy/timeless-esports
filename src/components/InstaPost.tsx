@@ -11,7 +11,7 @@ const InstaPost = memo(() => {
 	);
 
 	const capturePost = async () => {
-		if (!postRef.current) return;
+		if (!postRef.current) { return; }
 
 		try {
 			const canvas = await html2canvas(postRef.current, {

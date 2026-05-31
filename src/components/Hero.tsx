@@ -63,9 +63,9 @@ const Hero = () => {
 				</div>
 			</div>
 			<div className="hero-bg-effects">
-				<div className="effect-1"></div>
-				<div className="effect-2"></div>
-				<div className="effect-3"></div>
+				<div className="effect-1" />
+				<div className="effect-2" />
+				<div className="effect-3" />
 			</div>
 		</section>
 	);

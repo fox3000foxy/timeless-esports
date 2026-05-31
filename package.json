@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "type-check": "tsc --noEmit",
-    "create-cname": "echo timeless-esports.com > dist/CNAME",
+    "create-cname": "echo timeless-esports.foxyagency.fr > dist/CNAME",
     "preview": "vite preview",
     "format": "bunx --bun @biomejs/biome format --write ./src",
     "check": "bunx --bun @biomejs/biome check ./src",

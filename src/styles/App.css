@@ -55,11 +55,16 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(15, 15, 15, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 2px solid var(--primary-red);
+  background: rgba(15, 15, 15, 0.8);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(220, 38, 38, 0.2);
   z-index: 1000;
   transition: all 0.3s ease;
+}
+
+.header:hover {
+  border-bottom-color: rgba(220, 38, 38, 0.4);
 }
 
 .header .container {
@@ -114,6 +119,7 @@ body {
 .nav-item.active {
   color: var(--white);
   background: var(--gradient-red);
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
   transform: translateY(-2px);
 }
 
@@ -141,6 +147,18 @@ section {
   overflow: hidden;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, rgba(220, 38, 38, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 20% 50%, rgba(220, 38, 38, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(220, 38, 38, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .hero-content {
   text-align: center;
   z-index: 2;
@@ -157,6 +175,7 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  filter: drop-shadow(0 0 30px rgba(220, 38, 38, 0.4));
 }
 
 .hero-subtitle {
@@ -268,6 +287,21 @@ section {
 .contact-section {
   padding: 6rem 0;
   background: var(--secondary-black);
+  position: relative;
+}
+
+.team-section::before,
+.tournaments-section::before,
+.news-section::before,
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-red), transparent);
+  opacity: 0.3;
 }
 
 .section-title {
@@ -281,6 +315,7 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(220, 38, 38, 0.3));
 }
 
 .section-subtitle {
@@ -333,10 +368,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: -16rem;
+  margin-top: -11rem;
   padding: 2rem 0;
   position: relative;
-  min-height: 600px;
+  min-height: 420px;
   zoom: 1;
 }
 
@@ -372,58 +407,23 @@ section {
 /* Responsive pour la photo de groupe */
 @media (max-width: 1200px) {
   .team-photo-lineup {
-    /* min-height: 500px; */
-    zoom: 0.5;
+    min-height: 340px;
+    zoom: 0.85;
   }
-
-  /* .team-member-photo .member-image {
-    height: 450px;
-  } */
 }
 
 @media (max-width: 900px) {
   .team-photo-lineup {
-    /* flex-wrap: wrap; */
-    /* min-height: auto; */
     gap: 1rem;
-    zoom: 0.4;
+    zoom: 0.7;
   }
-
-  /* 
-  .team-member-photo {
-    margin-left: 0 !important;
-  }
-  
-  .team-member-photo .member-image {
-    height: 350px;
-  }
-  
-  .member-hover-info {
-    width: 260px;
-    padding: 1rem;
-  } */
 }
 
 @media (max-width: 600px) {
   .team-photo-lineup {
-    zoom: 0.2;
-    top: 218px;
-    /* flex-direction: column;
-    align-items: center; */
+    zoom: 0.4;
+    top: 160px;
   }
-  /*   
-  .team-member-photo .member-image {
-    height: 300px;
-  }
-  
-  .member-hover-info {
-    width: 240px;
-    padding: 0.8rem;
-  }
-  
-  .member-hover-info .info-header h3 {
-    font-size: 1.4rem;
-  } */
 }
 
 /* Achievements Section */
@@ -434,17 +434,20 @@ section {
 }
 
 .achievement-card {
-  background: var(--gradient-dark);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
-  /* border-left: 4px solid var(--primary-red); */
+  border: var(--glass-border);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 .achievement-card:hover {
-  /* transform: translateX(8px); */
-  border-left-width: 8px;
+  border-color: var(--primary-red);
+  box-shadow: var(--glow-red), 0 8px 32px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
 }
 
 .achievement-icon {
@@ -471,16 +474,18 @@ section {
 }
 
 .news-card {
-  background: var(--gradient-dark);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
   padding: 2rem;
   border-radius: 16px;
-  border: 2px solid var(--dark-gray);
+  border: var(--glass-border);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .news-card:hover {
   border-color: var(--primary-red);
+  box-shadow: var(--glow-red);
   transform: translateY(-4px);
 }
 
@@ -653,8 +658,9 @@ section {
 }
 
 .merch-card {
-  background: var(--dark-gray);
-  border: 2px solid transparent;
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -665,8 +671,8 @@ section {
 
 .merch-card:hover {
   border-color: var(--primary-red);
+  box-shadow: var(--glow-red);
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(220, 38, 38, 0.2);
 }
 
 .merch-image-container {
@@ -749,7 +755,7 @@ section {
 
 .merch-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(220, 38, 38, 0.4);
+  box-shadow: 0 0 24px rgba(220, 38, 38, 0.5);
 }
 
 .merch-button:active {

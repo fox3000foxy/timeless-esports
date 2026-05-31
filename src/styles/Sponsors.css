@@ -17,21 +17,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 400px; /* Ensure consistent height for all sponsor cards */
+  height: 400px;
   padding: 1rem;
-  background: var(--dark-gray);
-  border-radius: 8px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
 .sponsor-card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transform: scale(1.05);
+  border-color: var(--primary-red);
+  box-shadow: var(--glow-red);
 }
 
 .sponsor-logo {

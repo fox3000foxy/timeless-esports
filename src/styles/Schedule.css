@@ -15,18 +15,18 @@
 }
 
 .match-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 43, 43, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
 }
 
 .match-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(255, 43, 43, 0.1);
-  border-color: rgba(255, 43, 43, 0.4);
+  border-color: var(--primary-red);
+  box-shadow: var(--glow-red);
 }
 
 .match-header {
@@ -92,19 +92,21 @@
 
 .watch-button {
   display: block;
-  background: rgba(255, 43, 43, 0.2);
-  color: #ff2b2b;
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--primary-red);
   text-align: center;
   padding: 0.8rem;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 43, 43, 0.3);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  font-weight: 600;
 }
 
 .watch-button:hover {
-  background: rgba(255, 43, 43, 0.3);
-  border-color: rgba(255, 43, 43, 0.5);
+  background: rgba(220, 38, 38, 0.2);
+  border-color: var(--primary-red);
+  box-shadow: 0 0 16px rgba(220, 38, 38, 0.3);
 }
 
 /* Media Queries */

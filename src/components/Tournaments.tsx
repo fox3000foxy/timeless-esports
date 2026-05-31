@@ -30,8 +30,8 @@ const Tournaments = memo(() => {
 			<div className="container">
 				<h2 className="section-title">Nos Succès</h2>
 				<div className="achievements-grid">
-				{achievements.map((achievement) => (
-					<div key={achievement.title} className="achievement-card">
+					{achievements.map((achievement) => (
+						<div key={achievement.title} className="achievement-card">
 							<div className="achievement-icon">
 								<FontAwesomeIcon icon={achievement.icon} />
 							</div>

@@ -89,7 +89,9 @@ const Merch = () => {
 		setSelectedVariants((prev) => {
 			const currentVariant = prev[productId];
 			const product = merchProducts.find((p) => p.id === productId);
-			if (!product) { return prev; }
+			if (!product) {
+				return prev;
+			}
 			const totalVariants = product.variants.length;
 			const newVariant =
 				(currentVariant + direction + totalVariants + 1) % (totalVariants + 1);
@@ -125,18 +127,18 @@ const Merch = () => {
 									/>
 									{product.variants.length > 0 && (
 										<div className="variant-controls">
-										<button
-											type="button"
-											className="variant-arrow left"
-											onClick={() => handleVariantChange(product.id, -1)}
-										>
-											◀
-										</button>
-										<button
-											type="button"
-											className="variant-arrow right"
-											onClick={() => handleVariantChange(product.id, 1)}
-										>
+											<button
+												type="button"
+												className="variant-arrow left"
+												onClick={() => handleVariantChange(product.id, -1)}
+											>
+												◀
+											</button>
+											<button
+												type="button"
+												className="variant-arrow right"
+												onClick={() => handleVariantChange(product.id, 1)}
+											>
 												▶
 											</button>
 										</div>
@@ -147,7 +149,9 @@ const Merch = () => {
 									<p className="merch-description">{product.description}</p>
 									<div className="merch-footer">
 										<span className="merch-price">{product.price}</span>
-										<button type="button" className="merch-button">Ajouter</button>
+										<button type="button" className="merch-button">
+											Ajouter
+										</button>
 									</div>
 								</div>
 							</div>

@@ -95,11 +95,11 @@ const Schedule = () => {
 						gap: "20px",
 					}}
 				>
-				{upcomingMatches.map((match, index) => (
-					<div
-						key={`${match.opponent}-${match.date}`}
-						className="match-card"
-						data-aos-delay={index * 100}
+					{upcomingMatches.map((match, index) => (
+						<div
+							key={`${match.opponent}-${match.date}`}
+							className="match-card"
+							data-aos-delay={index * 100}
 						>
 							<div className="match-header">
 								<span className="game-tag">{match.game}</span>

@@ -11,7 +11,9 @@ const InstaPost = memo(() => {
 	);
 
 	const capturePost = async () => {
-		if (!postRef.current) { return; }
+		if (!postRef.current) {
+			return;
+		}
 
 		try {
 			const canvas = await html2canvas(postRef.current, {
@@ -42,7 +44,9 @@ const InstaPost = memo(() => {
 	return (
 		<div ref={postRef} className="insta-post">
 			<h2>{selectedMember.nickname}</h2>
-			<button type="button" onClick={capturePost}>Capture Post</button>
+			<button type="button" onClick={capturePost}>
+				Capture Post
+			</button>
 		</div>
 	);
 });

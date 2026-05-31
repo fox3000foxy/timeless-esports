@@ -81,8 +81,8 @@ const PlayerProfile = () => {
 					<div className="profile-achievements">
 						<h3>Réalisations</h3>
 						<div className="achievements-list">
-						{achievements.map((achievement) => (
-							<div key={achievement.title} className="achievement-item">
+							{achievements.map((achievement) => (
+								<div key={achievement.title} className="achievement-item">
 									<div className="achievement-header">
 										<h4>{achievement.title}</h4>
 										<span className="achievement-date">{achievement.date}</span>

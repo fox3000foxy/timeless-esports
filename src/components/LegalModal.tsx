@@ -7,7 +7,9 @@ interface LegalModalProps {
 }
 
 const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
-	if (!isOpen) { return null; }
+	if (!isOpen) {
+		return null;
+	}
 
 	const content =
 		type === "legal" ? (
@@ -128,8 +130,23 @@ const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
 		);
 
 	return (
-		<div className="legal-modal-overlay" role="dialog" aria-modal="true" onClick={onClose} onKeyDown={(e) => { if (e.key === "Escape") { onClose(); } }}>
-			<div className="legal-modal-content" role="document" onClick={(e) => e.stopPropagation()} onKeyDown={(e) => e.stopPropagation()}>
+		<div
+			className="legal-modal-overlay"
+			role="dialog"
+			aria-modal="true"
+			onClick={onClose}
+			onKeyDown={(e) => {
+				if (e.key === "Escape") {
+					onClose();
+				}
+			}}
+		>
+			<div
+				className="legal-modal-content"
+				role="document"
+				onClick={(e) => e.stopPropagation()}
+				onKeyDown={(e) => e.stopPropagation()}
+			>
 				<button type="button" className="close-button" onClick={onClose}>
 					×
 				</button>

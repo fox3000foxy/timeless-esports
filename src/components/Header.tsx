@@ -48,12 +48,12 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
 						{/* <span className="esport-text">ESPORT</span> */}
 					</div>
 				</div>
-			<button
-				type="button"
-				className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
-				onClick={toggleMenu}
-				aria-label="Menu"
-			>
+				<button
+					type="button"
+					className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
+					onClick={toggleMenu}
+					aria-label="Menu"
+				>
 					<span />
 					<span />
 					<span />

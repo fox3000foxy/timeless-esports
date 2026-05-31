@@ -51,8 +51,8 @@ const History = () => {
 						</p>
 
 						<div className="history-members">
-							{members.map((member, index) => (
-								<div key={index} className="member-card">
+						{members.map((member) => (
+							<div key={member.name} className="member-card">
 									<h4 className="member-name">{member.name}</h4>
 									<p className="member-role">{member.role}</p>
 									<p className="member-description">{member.description}</p>
@@ -85,8 +85,8 @@ const History = () => {
 					<div className="history-aside">
 						<h3 className="aside-title">Dates clés</h3>
 						<div className="history-timeline">
-							{historyEvents.map((event, index) => (
-								<div key={index} className="timeline-event">
+						{historyEvents.map((event) => (
+							<div key={event.date} className="timeline-event">
 									<p className="event-date">{event.date}</p>
 									<p className="event-description">{event.description}</p>
 								</div>

@@ -37,8 +37,8 @@ const Sponsors = () => {
 					partagent notre passion pour l'excellence et l'innovation.
 				</p>
 				<div className="sponsors-grid">
-					{sponsors.map((sponsor, index) => (
-						<div key={index} className="sponsor-card">
+				{sponsors.map((sponsor) => (
+					<div key={sponsor.name} className="sponsor-card">
 							<div
 								className="sponsor-icon"
 								style={

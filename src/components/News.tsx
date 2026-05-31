@@ -81,8 +81,8 @@ const News = () => {
 			<div className="container">
 				<h2 className="section-title">Actualités</h2>
 				<div className="news-grid">
-					{newsArticles.map((article, index) => (
-						<article key={index} className="news-card">
+				{newsArticles.map((article) => (
+					<article key={article.title} className="news-card">
 							<h3>{article.title}</h3>
 							<p>{article.content}</p>
 							<span className="news-date">{article.date}</span>

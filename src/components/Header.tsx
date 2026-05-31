@@ -48,11 +48,12 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
 						{/* <span className="esport-text">ESPORT</span> */}
 					</div>
 				</div>
-				<button
-					className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
-					onClick={toggleMenu}
-					aria-label="Menu"
-				>
+			<button
+				type="button"
+				className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
+				onClick={toggleMenu}
+				aria-label="Menu"
+			>
 					<span />
 					<span />
 					<span />
@@ -60,6 +61,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
 				<nav className={`navigation ${isMenuOpen ? "open" : ""}`}>
 					{navigation.map((item) => (
 						<button
+							type="button"
 							key={item.id}
 							onClick={() => scrollToSection(item.id)}
 							className={`nav-item ${activeSection === item.id ? "active" : ""}`}

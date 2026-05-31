@@ -67,43 +67,53 @@ const Team = () => {
 
 						const config = configs[index];
 
-						return (
-							<div
-								key={index}
-								className="team-member-photo"
-								onClick={() => handleMemberClick(member)}
-							>
-								<img
-									src={member.avatar}
-									alt={`${member.name} - ${member.role}`}
-									className="member-image"
-									style={{
-										height: config.height,
-										transform: `scale(${config.scale})`,
-										zIndex: config.zIndex,
-										position: "relative",
-										left: config.left,
-										right: config.right,
-										top: config.top,
-									}}
-									onMouseOver={(e) => {
-										const scale = config.scale * 1.05;
-										e.currentTarget.style.transform = `scale(${scale})`;
-									}}
-									onMouseOut={(e) => {
-										e.currentTarget.style.transform = `scale(${config.scale})`;
-									}}
-								/>
-							</div>
+					return (
+						<button
+							type="button"
+							key={member.nickname}
+							className="team-member-photo"
+							onClick={() => handleMemberClick(member)}
+						>
+							<img
+								src={member.avatar}
+								alt={`${member.name} - ${member.role}`}
+								className="member-image"
+								style={{
+									height: config.height,
+									transform: `scale(${config.scale})`,
+									zIndex: config.zIndex,
+									position: "relative",
+									left: config.left,
+									right: config.right,
+									top: config.top,
+								}}
+								onMouseOver={(e) => {
+									const scale = config.scale * 1.05;
+									e.currentTarget.style.transform = `scale(${scale})`;
+								}}
+								onMouseOut={(e) => {
+									e.currentTarget.style.transform = `scale(${config.scale})`;
+								}}
+								onFocus={(e) => {
+									const scale = config.scale * 1.05;
+									e.currentTarget.style.transform = `scale(${scale})`;
+								}}
+								onBlur={(e) => {
+									e.currentTarget.style.transform = `scale(${config.scale})`;
+								}}
+							/>
+						</button>
 						);
 					})}
 				</div>
 
 				{selectedMember && (
-					<div className="modal-overlay" onClick={handleCloseModal}>
-						<div
-							className="modal-content"
-							onClick={(e) => e.stopPropagation()}
+				<div className="modal-overlay" role="dialog" aria-modal="true" onClick={handleCloseModal} onKeyDown={(e) => { if (e.key === "Escape") { handleCloseModal(); } }}>
+					<div
+						className="modal-content"
+						role="document"
+						onClick={(e) => e.stopPropagation()}
+						onKeyDown={(e) => e.stopPropagation()}
 							style={{
 								position: "fixed",
 								top: "50%",
@@ -122,9 +132,10 @@ const Team = () => {
 								boxShadow: "0 0 30px rgba(255, 107, 53, 0.4)",
 							}}
 						>
-							<button
-								onClick={handleCloseModal}
-								style={{
+						<button
+							type="button"
+							onClick={handleCloseModal}
+							style={{
 									position: "absolute",
 									right: "1rem",
 									top: "1rem",
@@ -141,14 +152,22 @@ const Team = () => {
 									cursor: "pointer",
 									transition: "all 0.2s ease",
 								}}
-								onMouseOver={(e) => {
-									e.currentTarget.style.background = "rgba(255, 43, 43, 0.2)";
-									e.currentTarget.style.transform = "scale(1.1)";
-								}}
-								onMouseOut={(e) => {
-									e.currentTarget.style.background = "rgba(255, 43, 43, 0.1)";
-									e.currentTarget.style.transform = "scale(1)";
-								}}
+							onMouseOver={(e) => {
+								e.currentTarget.style.background = "rgba(255, 43, 43, 0.2)";
+								e.currentTarget.style.transform = "scale(1.1)";
+							}}
+							onMouseOut={(e) => {
+								e.currentTarget.style.background = "rgba(255, 43, 43, 0.1)";
+								e.currentTarget.style.transform = "scale(1)";
+							}}
+							onFocus={(e) => {
+								e.currentTarget.style.background = "rgba(255, 43, 43, 0.2)";
+								e.currentTarget.style.transform = "scale(1.1)";
+							}}
+							onBlur={(e) => {
+								e.currentTarget.style.background = "rgba(255, 43, 43, 0.1)";
+								e.currentTarget.style.transform = "scale(1)";
+							}}
 							>
 								✕
 							</button>
@@ -235,9 +254,9 @@ const Team = () => {
 										</div>
 										<div className="achievements">
 											<h4>Achievements</h4>
-											{selectedMember.achievements.map(
-												(achievement: string, i: number) => (
-													<span key={i} className="achievement-badge">
+										{selectedMember.achievements.map(
+											(achievement: string) => (
+												<span key={achievement} className="achievement-badge">
 														🏆 {achievement}
 													</span>
 												)

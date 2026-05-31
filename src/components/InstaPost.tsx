@@ -42,7 +42,7 @@ const InstaPost = memo(() => {
 	return (
 		<div ref={postRef} className="insta-post">
 			<h2>{selectedMember.nickname}</h2>
-			<button onClick={capturePost}>Capture Post</button>
+			<button type="button" onClick={capturePost}>Capture Post</button>
 		</div>
 	);
 });

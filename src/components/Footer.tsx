@@ -33,42 +33,44 @@ const Footer = () => {
 						fontSize: "0.85rem",
 					}}
 				>
-					<button
-						onClick={() => setModalType("legal")}
-						style={{
-							background: "none",
-							border: "none",
-							color: "var(--silver)",
-							cursor: "pointer",
-							padding: "0.5rem",
-							transition: "color 0.3s ease",
-						}}
-						onMouseEnter={(e) =>
-							(e.currentTarget.style.color = "var(--primary-red)")
-						}
-						onMouseLeave={(e) =>
-							(e.currentTarget.style.color = "var(--silver)")
-						}
-					>
-						Mentions légales
-					</button>
-					<button
-						onClick={() => setModalType("privacy")}
-						style={{
-							background: "none",
-							border: "none",
-							color: "var(--silver)",
-							cursor: "pointer",
-							padding: "0.5rem",
-							transition: "color 0.3s ease",
-						}}
-						onMouseEnter={(e) =>
-							(e.currentTarget.style.color = "var(--primary-red)")
-						}
-						onMouseLeave={(e) =>
-							(e.currentTarget.style.color = "var(--silver)")
-						}
-					>
+				<button
+					type="button"
+					onClick={() => setModalType("legal")}
+					style={{
+						background: "none",
+						border: "none",
+						color: "var(--silver)",
+						cursor: "pointer",
+						padding: "0.5rem",
+						transition: "color 0.3s ease",
+					}}
+					onMouseEnter={(e) => {
+						e.currentTarget.style.color = "var(--primary-red)";
+					}}
+					onMouseLeave={(e) => {
+						e.currentTarget.style.color = "var(--silver)";
+					}}
+				>
+					Mentions légales
+				</button>
+				<button
+					type="button"
+					onClick={() => setModalType("privacy")}
+					style={{
+						background: "none",
+						border: "none",
+						color: "var(--silver)",
+						cursor: "pointer",
+						padding: "0.5rem",
+						transition: "color 0.3s ease",
+					}}
+					onMouseEnter={(e) => {
+						e.currentTarget.style.color = "var(--primary-red)";
+					}}
+					onMouseLeave={(e) => {
+						e.currentTarget.style.color = "var(--silver)";
+					}}
+				>
 						Politique de confidentialité
 					</button>
 				</div>

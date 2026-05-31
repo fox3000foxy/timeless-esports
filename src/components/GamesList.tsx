@@ -87,7 +87,8 @@ const GamesList = () => {
 					<div className="games-nav">
 						{games.map((game, index) => (
 							<button
-								key={index}
+								type="button"
+								key={game.name}
 								className={`game-nav-item ${activeGame === index ? "active" : ""}`}
 								onClick={() => setActiveGame(index)}
 							>

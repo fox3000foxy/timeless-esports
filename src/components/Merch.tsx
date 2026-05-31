@@ -125,16 +125,18 @@ const Merch = () => {
 									/>
 									{product.variants.length > 0 && (
 										<div className="variant-controls">
-											<button
-												className="variant-arrow left"
-												onClick={() => handleVariantChange(product.id, -1)}
-											>
-												◀
-											</button>
-											<button
-												className="variant-arrow right"
-												onClick={() => handleVariantChange(product.id, 1)}
-											>
+										<button
+											type="button"
+											className="variant-arrow left"
+											onClick={() => handleVariantChange(product.id, -1)}
+										>
+											◀
+										</button>
+										<button
+											type="button"
+											className="variant-arrow right"
+											onClick={() => handleVariantChange(product.id, 1)}
+										>
 												▶
 											</button>
 										</div>
@@ -145,7 +147,7 @@ const Merch = () => {
 									<p className="merch-description">{product.description}</p>
 									<div className="merch-footer">
 										<span className="merch-price">{product.price}</span>
-										<button className="merch-button">Ajouter</button>
+										<button type="button" className="merch-button">Ajouter</button>
 									</div>
 								</div>
 							</div>

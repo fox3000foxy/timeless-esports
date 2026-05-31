@@ -1,10 +1,7 @@
 .recruitment-section {
   padding: 4rem 0;
-  background: linear-gradient(
-    135deg,
-    rgba(20, 20, 30, 0.8) 0%,
-    rgba(40, 40, 50, 0.6) 100%
-  );
+  background: var(--secondary-black);
+  position: relative;
 }
 
 .recruitment-content {
@@ -27,8 +24,9 @@
 }
 
 .position-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 43, 43, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.3s ease;
@@ -36,12 +34,12 @@
 
 .position-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 43, 43, 0.4);
-  box-shadow: 0 10px 20px rgba(255, 43, 43, 0.1);
+  border-color: var(--primary-red);
+  box-shadow: var(--glow-red);
 }
 
 .position-card h4 {
-  color: #ff2b2b;
+  color: var(--primary-red);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -53,7 +51,7 @@
 
 .roles strong,
 .requirements strong {
-  color: #1da1f2;
+  color: var(--primary-red);
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -74,20 +72,21 @@
 .roles li:before,
 .requirements li:before {
   content: "•";
-  color: #ff2b2b;
+  color: var(--primary-red);
   position: absolute;
   left: -1rem;
 }
 
 .recruitment-form {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 43, 43, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 12px;
   padding: 2rem;
 }
 
 .recruitment-form h3 {
-  color: #ff2b2b;
+  color: var(--primary-red);
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -122,12 +121,21 @@
 .form-group input,
 .form-group select,
 .form-group textarea {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 43, 43, 0.2);
+  background: rgba(15, 15, 15, 0.6);
+  border: var(--glass-border);
   border-radius: 8px;
   padding: 0.8rem;
   color: #ffffff;
   font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-red);
+  box-shadow: 0 0 12px rgba(220, 38, 38, 0.15);
 }
 
 .form-group textarea {
@@ -138,9 +146,9 @@
 .submit-button {
   margin-top: 2rem;
   width: 100%;
-  background: rgba(255, 43, 43, 0.2);
-  color: #ff2b2b;
-  border: 1px solid rgba(255, 43, 43, 0.3);
+  background: rgba(220, 38, 38, 0.1);
+  color: var(--primary-red);
+  border: 1px solid rgba(220, 38, 38, 0.2);
   padding: 1rem;
   border-radius: 8px;
   font-size: 1.1rem;
@@ -149,6 +157,7 @@
 }
 
 .submit-button:hover {
-  background: rgba(255, 43, 43, 0.3);
-  border-color: rgba(255, 43, 43, 0.5);
+  background: rgba(220, 38, 38, 0.2);
+  border-color: var(--primary-red);
+  box-shadow: 0 0 16px rgba(220, 38, 38, 0.3);
 }

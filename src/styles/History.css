@@ -1,11 +1,8 @@
 .history-section {
   padding: 4rem 0;
-  background: linear-gradient(
-    135deg,
-    rgba(20, 20, 30, 0.8) 0%,
-    rgba(40, 40, 50, 0.6) 100%
-  );
+  background: var(--secondary-black);
   color: #fff;
+  position: relative;
 }
 
 .history-grid {
@@ -17,10 +14,11 @@
 }
 
 .history-main {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .history-title {
@@ -33,7 +31,7 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: #ccc;
+  color: var(--silver);
 }
 
 .history-members {
@@ -44,19 +42,19 @@
 }
 
 .member-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .member-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-color: var(--primary-red);
+  box-shadow: var(--glow-red);
 }
 
 .member-name {
@@ -68,13 +66,13 @@
 
 .member-role {
   font-size: 1rem;
-  color: var(--primary-red, #ff2b2b);
+  color: var(--primary-red);
   margin-bottom: 0.5rem;
 }
 
 .member-description {
   font-size: 0.9rem;
-  color: #ccc;
+  color: var(--silver);
 }
 
 .history-quote {
@@ -83,15 +81,16 @@
   margin: 2rem 0;
   color: #f5f5f5;
   font-size: 1.1rem;
-  border-left: 4px solid var(--primary-red, #ff2b2b);
+  border-left: 4px solid var(--primary-red);
   padding-left: 1rem;
 }
 
 .history-aside {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -112,32 +111,32 @@
 }
 
 .timeline-event {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 8px;
   padding: 1rem;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .timeline-event:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-color: var(--primary-red);
+  box-shadow: var(--glow-red);
 }
 
 .event-date {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: var(--primary-red, #ff2b2b);
+  color: var(--primary-red);
 }
 
 .event-description {
   font-size: 0.9rem;
-  color: #ccc;
+  color: var(--silver);
   margin: 0;
 }
 
-/* Media Queries for responsive design */
 @media (max-width: 1024px) {
   .history-grid {
     grid-template-columns: 1fr;
@@ -174,14 +173,17 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  backdrop-filter: blur(4px);
 }
 
 .modal-content {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 12px;
   padding: 2rem;
-  /* max-width: 600px; */
-  width: 100%;
+  width: 90%;
+  max-width: 600px;
   text-align: center;
 }
 

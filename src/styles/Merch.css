@@ -15,9 +15,9 @@
 }
 
 .variant-arrow {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  color: #000;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  color: var(--primary-red);
   font-size: 1.5rem;
   font-weight: bold;
   padding: 5px 10px;
@@ -32,7 +32,8 @@
 }
 
 .variant-arrow:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background: rgba(220, 38, 38, 0.2);
+  border-color: var(--primary-red);
   transform: scale(1.1);
 }
 
@@ -48,15 +49,6 @@
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.merch-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-/* Media Queries */
 @media screen and (max-width: 1200px) {
   .merch-grid {
     grid-template-columns: repeat(3, 1fr);

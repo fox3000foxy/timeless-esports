@@ -1,10 +1,7 @@
 .games-section {
   padding: 4rem 0;
-  background: linear-gradient(
-    135deg,
-    rgba(20, 20, 30, 0.8) 0%,
-    rgba(40, 40, 50, 0.6) 100%
-  );
+  background: var(--secondary-black);
+  position: relative;
 }
 
 .games-showcase {
@@ -19,29 +16,33 @@
 }
 
 .game-nav-item {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 43, 43, 0.2);
+  background: var(--glass-bg);
+  border: var(--glass-border);
   color: #ffffff;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .game-nav-item:hover {
-  background: rgba(255, 43, 43, 0.1);
-  border-color: rgba(255, 43, 43, 0.4);
+  background: rgba(220, 38, 38, 0.1);
+  border-color: var(--primary-red);
+  box-shadow: 0 0 12px rgba(220, 38, 38, 0.15);
 }
 
 .game-nav-item.active {
-  background: rgba(255, 43, 43, 0.2);
-  border-color: rgba(255, 43, 43, 0.5);
-  color: #ff2b2b;
+  background: rgba(220, 38, 38, 0.15);
+  border-color: var(--primary-red);
+  color: var(--primary-red);
+  box-shadow: var(--glow-red);
 }
 
 .game-details {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 43, 43, 0.2);
+  background: var(--glass-bg);
+  backdrop-filter: blur(4px);
+  border: var(--glass-border);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -81,7 +82,7 @@
 
 .stat .label {
   font-size: 0.9rem;
-  color: #999;
+  color: var(--silver);
 }
 
 .stat .value {
@@ -94,7 +95,7 @@
 }
 
 .game-roster h4 {
-  color: #ff2b2b;
+  color: var(--primary-red);
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -117,7 +118,7 @@
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #ff2b2b;
+  border: 2px solid var(--primary-red);
 }
 
 .roster-player span {
@@ -125,7 +126,6 @@
   font-weight: 500;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .games-section {
     padding: 2rem 0;

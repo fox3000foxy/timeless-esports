@@ -72,7 +72,7 @@ export default defineConfig({
     }),
     visualizer({
       filename: "./dist/bundle-analysis.html",
-      open: true, // Ouvrir automatiquement le rapport après le build
+      open: !process.env.CI,
     }),
   ]
 })

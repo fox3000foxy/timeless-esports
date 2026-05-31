@@ -36,7 +36,9 @@ function App() {
 		let ticking = false;
 
 		const handleScroll = () => {
-			if (ticking) { return; }
+			if (ticking) {
+				return;
+			}
 			ticking = true;
 
 			requestAnimationFrame(() => {

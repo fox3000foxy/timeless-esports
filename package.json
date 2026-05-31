@@ -7,8 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "type-check": "tsc --noEmit",
-    "lint": "eslint src",
-    "preview": "vite preview"
+    "create-cname": "echo fox3000foxy.com > dist/CNAME",
+    "preview": "vite preview",
+    "format": "bunx --bun @biomejs/biome format --write ./src",
+    "check": "bunx --bun @biomejs/biome check ./src",
+    "lint": "bunx --bun @biomejs/biome lint ./src",
+    "deploy-page": "bun run build && bun run create-cname && cp dist/index.html dist/404.html && bunx gh-pages -d dist --nojekyll",
+    "lint:write": "bunx --bun @biomejs/biome lint --write ./src"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",

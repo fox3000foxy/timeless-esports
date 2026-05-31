@@ -53,7 +53,7 @@ export default defineConfig({
         dontCacheBustURLsMatching: /\.(png|jpg|jpeg|svg|gif|avif|webp)$/
       },
       manifest: {
-        name: 'Timelesss',
+        name: 'Timeless',
         short_name: 'Timeless',
         theme_color: '#ffffff',
         icons: [

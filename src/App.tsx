@@ -18,79 +18,79 @@ const Team = lazy(() => import("./components/Team"));
 const Tournaments = lazy(() => import("./components/Tournaments"));
 
 function App() {
-  const [activeSection, setActiveSection] = useState("home");
+	const [activeSection, setActiveSection] = useState("home");
 
-  // Détection de la section active basée sur le scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = [
-        "home",
-        "history",
-        "games",
-        "schedule",
-        "team",
-        "tournaments",
-        "merch",
-        "news",
-        "recruitment",
-        "contact",
-      ];
-      const scrollPosition = window.scrollY + 100;
+	// Détection de la section active basée sur le scroll
+	useEffect(() => {
+		const handleScroll = () => {
+			const sections = [
+				"home",
+				"history",
+				"games",
+				"schedule",
+				"team",
+				"tournaments",
+				"merch",
+				"news",
+				"recruitment",
+				"contact",
+			];
+			const scrollPosition = window.scrollY + 100;
 
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (
-            scrollPosition >= offsetTop &&
-            scrollPosition < offsetTop + offsetHeight
-          ) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
+			for (const section of sections) {
+				const element = document.getElementById(section);
+				if (element) {
+					const { offsetTop, offsetHeight } = element;
+					if (
+						scrollPosition >= offsetTop &&
+						scrollPosition < offsetTop + offsetHeight
+					) {
+						setActiveSection(section);
+						break;
+					}
+				}
+			}
+		};
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Suspense fallback={<div>Chargement...</div>}>
-              <div className="app">
-                <Header
-                  activeSection={activeSection}
-                  setActiveSection={setActiveSection}
-                />
-                <main className="main">
-                  <Hero />
-                  <History />
-                  <GamesList />
-                  <Schedule />
-                  <Team />
-                  <Tournaments />
-                  <Sponsors />
-                  <Merch />
-                  <News />
-                  <Recruitment />
-                  <Contact />
-                </main>
-                <Footer />
-              </div>
-            </Suspense>
-          }
-        />
-        {/* <Route path="/player/:playerId" element={<PlayerProfile />} /> */}
-        {/* <Route path="/instaPost/:member" element={<InstaPost />} /> */}
-      </Routes>
-    </BrowserRouter>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route
+					path="/"
+					element={
+						<Suspense fallback={<div>Chargement...</div>}>
+							<div className="app">
+								<Header
+									activeSection={activeSection}
+									setActiveSection={setActiveSection}
+								/>
+								<main className="main">
+									<Hero />
+									<History />
+									<GamesList />
+									<Schedule />
+									<Team />
+									<Tournaments />
+									<Sponsors />
+									<Merch />
+									<News />
+									<Recruitment />
+									<Contact />
+								</main>
+								<Footer />
+							</div>
+						</Suspense>
+					}
+				/>
+				{/* <Route path="/player/:playerId" element={<PlayerProfile />} /> */}
+				{/* <Route path="/instaPost/:member" element={<InstaPost />} /> */}
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;

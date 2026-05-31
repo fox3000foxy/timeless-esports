@@ -40,7 +40,7 @@ const Team = () => {
 								scale: 0.73,
 								zIndex: 3,
 								left: "259px",
-								top: "161px",
+								top: "191px",
 								height: "664px",
 							},
 							{
@@ -54,7 +54,7 @@ const Team = () => {
 								scale: 0.83,
 								zIndex: 3,
 								right: "203px",
-								top: "203px",
+								top: "233px",
 								height: "680px",
 							},
 							{
@@ -126,21 +126,17 @@ const Team = () => {
 							onClick={(e) => e.stopPropagation()}
 							onKeyDown={(e) => e.stopPropagation()}
 							style={{
-								position: "fixed",
-								top: "50%",
-								left: "50%",
-								transform: "translate(-50%, -50%)",
-								zIndex: 1000,
-								background: "rgba(0, 0, 0, 0.95)",
+								background: "rgba(10, 10, 10, 0.98)",
 								padding: "2rem",
 								borderRadius: "12px",
 								color: "#fff",
-								width: "90%",
-								// maxWidth: '800px',
-								maxHeight: "90vh",
+								width: "95%",
+								maxWidth: "1200px",
+								maxHeight: "85vh",
 								overflow: "auto",
-								border: "2px solid #ff6b35",
-								boxShadow: "0 0 30px rgba(255, 107, 53, 0.4)",
+								border: "1px solid rgba(220, 38, 38, 0.3)",
+								boxShadow: "0 0 30px rgba(220, 38, 38, 0.2)",
+								marginTop: "60px",
 							}}
 						>
 							<button
@@ -183,14 +179,21 @@ const Team = () => {
 								✕
 							</button>
 							<div
-								style={{ display: "flex", flexDirection: "row", gap: "1rem" }}
+								style={{
+									display: "flex",
+									flexDirection: "row",
+									gap: "2rem",
+								}}
 							>
 								<div
 									style={{
-										flex: "20%",
-										// display: 'flex',
+										flex: "0 0 280px",
+										display: "flex",
 										justifyContent: "center",
-										alignItems: "center",
+										alignItems: "flex-start",
+										position: "sticky",
+										top: 0,
+										alignSelf: "flex-start",
 									}}
 									className="modal-member-avatar"
 								>
@@ -198,31 +201,28 @@ const Team = () => {
 										src={selectedMember.avatar}
 										alt={`${selectedMember.name} - ${selectedMember.role}`}
 										style={{
-											height: "100%",
+											width: "100%",
+											height: "auto",
 											borderRadius: "12px",
 											objectFit: "cover",
 										}}
 									/>
 								</div>
-								<div style={{ flex: "80%" }}>
+								<div style={{ flex: "1", minWidth: 0 }}>
 									<div className="info-header">
-										<h3>
-											{selectedMember.nickname}{" "}
+										<h3>{selectedMember.nickname}</h3>
+										<p className="member-name">
+											<span>{selectedMember.name}</span>
 											<a
 												href={selectedMember.instagram}
 												target="_blank"
 												rel="noopener noreferrer"
 												className="instagram-link"
-												style={{
-													color: "",
-													fontSize: "",
-													marginRight: "0.5rem",
-												}}
 												aria-label="Instagram"
 											>
 												<IconInstagram size={18} />
 											</a>
-										</h3>
+										</p>
 										<p className="role">{selectedMember.role}</p>
 										<p className="game">{selectedMember.game}</p>
 									</div>

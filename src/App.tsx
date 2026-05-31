@@ -22,6 +22,32 @@ function App() {
 	const [activeSection, setActiveSection] = useState("home");
 
 	useEffect(() => {
+		let aosInstance: typeof import("aos") | null = null;
+
+		const initAOS = async () => {
+			if (!aosInstance) {
+				const AOS = await import("aos");
+				await import("aos/dist/aos.css");
+				aosInstance = AOS.default;
+				aosInstance.init({
+					duration: 800,
+					once: true,
+					offset: 100,
+				});
+			}
+		};
+
+		const timeoutId = setTimeout(initAOS, 1000);
+
+		return () => {
+			clearTimeout(timeoutId);
+			if (aosInstance) {
+				aosInstance.refreshHard();
+			}
+		};
+	}, []);
+
+	useEffect(() => {
 		const sections = [
 			"home",
 			"history",

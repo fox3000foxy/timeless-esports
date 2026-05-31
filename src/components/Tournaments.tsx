@@ -1,27 +1,22 @@
-import {
-	faGamepad,
-	faMedal,
-	faTrophy,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { memo } from "react";
+import { IconGamepad, IconMedal, IconTrophy } from "./Icons";
 
 const Tournaments = memo(() => {
 	const achievements = [
 		{
 			title: "Vainqueur Tournoi Local Paris",
 			game: "Valorant",
-			icon: faTrophy,
+			icon: IconTrophy,
 		},
 		{
 			title: "Finaliste Tournoi Régional Lyon",
 			game: "Valorant",
-			icon: faMedal,
+			icon: IconMedal,
 		},
 		{
 			title: "Top 4 Tournoi Amateur Marseille",
 			game: "Valorant",
-			icon: faGamepad,
+			icon: IconGamepad,
 		},
 	];
 
@@ -30,15 +25,18 @@ const Tournaments = memo(() => {
 			<div className="container">
 				<h2 className="section-title">Nos Succès</h2>
 				<div className="achievements-grid">
-					{achievements.map((achievement) => (
-						<div key={achievement.title} className="achievement-card">
-							<div className="achievement-icon">
-								<FontAwesomeIcon icon={achievement.icon} />
+					{achievements.map((achievement) => {
+						const Icon = achievement.icon;
+						return (
+							<div key={achievement.title} className="achievement-card">
+								<div className="achievement-icon">
+									<Icon size={48} />
+								</div>
+								<h3>{achievement.title}</h3>
+								<p>{achievement.game}</p>
 							</div>
-							<h3>{achievement.title}</h3>
-							<p>{achievement.game}</p>
-						</div>
-					))}
+						);
+					})}
 				</div>
 			</div>
 		</section>

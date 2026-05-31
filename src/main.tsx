@@ -1,13 +1,9 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import ErrorBoundary from "./components/ErrorBoundary";
 import "./index.css";
 import { registerServiceWorker } from "./serviceWorker";
-
-AOS.init();
 
 registerServiceWorker();
 

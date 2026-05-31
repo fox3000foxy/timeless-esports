@@ -1,8 +1,7 @@
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import type { TeamMember } from "../data/teamData";
 import { teamMembersData } from "../data/teamData";
+import { IconInstagram } from "./Icons";
 import "../styles/Team.css";
 
 const Team = () => {
@@ -221,7 +220,7 @@ const Team = () => {
 												}}
 												aria-label="Instagram"
 											>
-												<FontAwesomeIcon icon={faInstagram} />
+												<IconInstagram size={18} />
 											</a>
 										</h3>
 										<p className="role">{selectedMember.role}</p>

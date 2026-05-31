@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "type-check": "tsc --noEmit",
-    "create-cname": "echo timeless-esports.foxyagency.fr > dist/CNAME",
+    "create-cname": "echo timeless-esports.com > dist/CNAME",
     "preview": "vite preview",
     "format": "bunx --bun @biomejs/biome format --write ./src",
     "check": "bunx --bun @biomejs/biome check ./src",
@@ -25,8 +25,6 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.14.0",
-    "rollup-plugin-purgecss": "^8.0.0",
-    "rollup-plugin-visualizer": "^7.0.1",
     "vite-plugin-pwa": "^1.2.0"
   },
   "devDependencies": {
@@ -36,6 +34,8 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
+    "rollup-plugin-purgecss": "^8.0.0",
+    "rollup-plugin-visualizer": "^7.0.1",
     "typescript": "~6.0.2",
     "vite": "^8.0.7"
   }

@@ -20,39 +20,46 @@ const Tournaments = lazy(() => import("./components/Tournaments"));
 function App() {
 	const [activeSection, setActiveSection] = useState("home");
 
-	// Détection de la section active basée sur le scroll
 	useEffect(() => {
-		const handleScroll = () => {
-			const sections = [
-				"home",
-				"history",
-				"games",
-				"schedule",
-				"team",
-				"tournaments",
-				"merch",
-				"news",
-				"recruitment",
-				"contact",
-			];
-			const scrollPosition = window.scrollY + 100;
+		const sections = [
+			"home",
+			"history",
+			"games",
+			"schedule",
+			"team",
+			"tournaments",
+			"merch",
+			"news",
+			"recruitment",
+			"contact",
+		];
+		let ticking = false;
 
-			for (const section of sections) {
-				const element = document.getElementById(section);
-				if (element) {
-					const { offsetTop, offsetHeight } = element;
-					if (
-						scrollPosition >= offsetTop &&
-						scrollPosition < offsetTop + offsetHeight
-					) {
-						setActiveSection(section);
-						break;
+		const handleScroll = () => {
+			if (ticking) { return; }
+			ticking = true;
+
+			requestAnimationFrame(() => {
+				const scrollPosition = window.scrollY + 100;
+
+				for (const section of sections) {
+					const element = document.getElementById(section);
+					if (element) {
+						const { offsetTop, offsetHeight } = element;
+						if (
+							scrollPosition >= offsetTop &&
+							scrollPosition < offsetTop + offsetHeight
+						) {
+							setActiveSection(section);
+							break;
+						}
 					}
 				}
-			}
+				ticking = false;
+			});
 		};
 
-		window.addEventListener("scroll", handleScroll);
+		window.addEventListener("scroll", handleScroll, { passive: true });
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 

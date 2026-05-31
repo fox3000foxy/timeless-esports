@@ -1,5 +1,6 @@
 import { Suspense, lazy, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Loading from "./components/Loading";
 import "./styles/App.css";
 
 // Lazy loading des composants
@@ -71,7 +72,7 @@ function App() {
 				<Route
 					path="/"
 					element={
-						<Suspense fallback={<div>Chargement...</div>}>
+						<Suspense fallback={<Loading />}>
 							<div className="app">
 								<Header
 									activeSection={activeSection}

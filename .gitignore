@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-originals_backup/
+# originals_backup/
 
 # Editor directories and files
 .vscode/*

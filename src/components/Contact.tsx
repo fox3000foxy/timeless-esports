@@ -10,7 +10,7 @@ const Contact = () => {
 					<h3>Contactez-nous</h3>
 					<p>Pour toute question ou demande, écrivez-nous à :</p>
 					<a
-						href="mailto:contact@timeless-esports.com"
+						href="mailto:contact@timeless-esports.foxyagency.fr"
 						style={{
 							color: "#1DA1F2",
 							textDecoration: "none",
@@ -32,7 +32,7 @@ const Contact = () => {
 							e.currentTarget.style.color = "#1DA1F2";
 						}}
 					>
-						contact@timeless-esports.com
+						contact@timeless-esports.foxyagency.fr
 					</a>
 				</div>
 			</div>

@@ -35,7 +35,7 @@ const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
 							<br />
 							<strong>TVA Intracommunautaire :</strong> FR 89 894567123
 							<br />
-							<strong>Email :</strong> contact@timeless-esports.com
+							<strong>Email :</strong> contact@timeless-esports.foxyagency.fr
 							<br />
 							<strong>Directeur de publication :</strong> Rami Vemuri
 							<br />
@@ -113,7 +113,7 @@ const LegalModal = ({ isOpen, onClose, type }: LegalModalProps) => {
 							Conformément au RGPD, vous disposez d'un droit d'accès, de
 							rectification, de suppression et de portabilité de vos données
 							personnelles. Pour exercer ces droits, contactez-nous à
-							contact@timeless-esports.com
+							contact@timeless-esports.foxyagency.fr
 						</p>
 					</section>
 

@@ -78,13 +78,15 @@ const Recruitment = () => {
 								],
 								footer: {
 									text: "Nouvelle candidature depuis timeless-esports.foxyagency.fr",
-									icon_url: "https://timeless-esports.foxyagency.fr/assets/logo.avif",
+									icon_url:
+										"https://timeless-esports.foxyagency.fr/assets/logo.avif",
 								},
 								timestamp: new Date().toISOString(),
 							},
 						],
 						username: "Recrutement Timeless",
-						avatar_url: "https://timeless-esports.foxyagency.fr/assets/logo.avif",
+						avatar_url:
+							"https://timeless-esports.foxyagency.fr/assets/logo.avif",
 					}),
 				}
 			);
